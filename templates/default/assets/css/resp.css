@@ -1,0 +1,136 @@
+@media screen (max-width: 375px) {
+.logo { width:50%;}
+.logo img { float:left; width:100%;}
+.address { width:50%; float:right; margin-top:8px; background:url(../images/loc.jpg) no-repeat 3em .7em; padding-left:8%; font-size:10px; background-size:28px 28px;}
+.address span { font-size:10px; line-height:15px;}
+.help_languages { width:100%; float:none; overflow:auto;}
+.help_languages ul { float:none;}
+.help_languages ul li a { font-size:.8em; text-align:center; padding:0 .9em;}
+.help_languages ul li a img {}
+.slider, .search { width:100%; float:none;}
+.search ul li { display:inline-block; width:50%;}
+.search ul li a{ width:100%; text-align:center; line-height:3em; }
+.main_menu_wrapper { position:relative; height:40px; 
+background:url(../images/hamburger.png) no-repeat 90% center, linear-gradient(#E2E4E7,silver); }
+.main_menu { width:100%; position:absolute; z-index:100; display:none;top:40px;}
+.main_menu_wrapper h5 { display: block;
+position: absolute;
+z-index: 110;
+padding-left: 1em;
+top: 12px;
+font-size: 1em;
+text-shadow: 1px 1px 1px silver;
+font-weight: bold;}
+.contents { padding-top:0;}
+.main_menu ul { margin-bottom:0; height:auto; background:grey;}
+.main_menu ul li a, .main_menu ul li { display:block; float:none; width:100%; line-height:40px; font-size:13px; text-shadow:1px 1px 1px white;}
+.main_menu ul li a { border-bottom:1px solid white; background:linear-gradient(#E2E4E7,silver)}
+.main_menu ul li:last-child a { border-bottom: none;}
+.comparison_params { width:90%; display:block; padding-left:10%; margin-right:0;}
+.comparison_params ul { list-style:none;}
+.comparison_params ul li,.comparative_vehicle ul li { display:block; width:100%; text-transform:uppercase; color:grey; font-size:.8em; border-bottom:1px solid silver; line-height:2.9em;}
+.comparison_header h3 { text-transform:uppercase; font-weight:bold;}
+.comparison_header span { color:#E56C1D; font-weight:bold; font-size:45px;}
+.comparative_vehicle { width:90%; display:block; padding-left:10%; margin-right:0;}
+.compare_heads { height:200px;}
+.compare_heads img { float:left; width:100%;}
+.comparative_vehicle ul li { font-weight:bold; text-transform:capitalize; color:black;}
+.comparative_vehicle .veh_info { border-bottom:0}
+.comparison_header { padding: 2em}
+.footer1,.footer2,.footer3,.footer4 { width:90%; display:block; padding-left:10%;}
+.contents .veh_headings { width:98%; padding-left:2%;}
+.vehicles_list ul li { width:99%; margin-left:1%; float:none; display:block; margin-right:0; margin-bottom:2em;}
+.small_menu ul li a, .small_menu ul li { display:block; width:100%; margin-bottom:.5em;}
+.price { float:none; display:block; width:100%; text-align:center;}
+.veh_info { width:100%;}
+.veh_title,.veh_desc { display:block; line-height:22px;}
+.ham { width:30px; height:30px; background:url(../images/hamburger.png) no-repeat; position:relative; left:82%; top:5px; z-index:105; cursor:pointer;}
+#search_form { padding:0 1.2em;}
+#search_form label { padding-bottom:0; margin-bottom:0;}
+#search_form .form-group { margin-bottom:0; padding-bottom:0;}
+.signup_wrapper { overflow:hidden; width:100%; border:1px solid #cecece; border-radius:2px; padding:2em; margin:0 auto; background-color:#F0F2F5}
+.signup_wrapper form input, .signup_wrapper form[name="photo"] { border-radius:0 !important;}
+.signup_wrapper .form-control { border-radius:0;}
+.signup_wrapper #signup_form,.signup_wrapper #signin_form { width:100%; float:left; margin-right:1em; font-size:13px;}
+.conf_pwd { margin-left:0; margin-top:.5em; margin-bottom:.5em;}
+.signup_wrapper #signup_form { margin-right:0;}
+.signup_wrapper .form-group { margin-bottom:.5rem;}
+.signup_wrapper form legend { padding-left:1em; font-size:1.5em; font-weight:bold; text-shadow:1px 1px 1px silver}
+.forgot a { color:black; text-shadow:1px 1px 1px silver; display:block;}
+.custom_radio {width: 50%; text-indent:.5em;}
+.custom_radio label { display:block; width:100%;}
+.custom_radio label input { float:left; margin-top:4px;}
+.custom_state_control { margin-top:0 !important;}
+.search_params { width:99%; margin-left:1%; padding:1.5em; }
+.select2 { margin-bottom:.5em !important; display:block; }
+.search_result_rows { width:100%;}
+	}
+@media screen (min-width: 376px) and (max-width: 767px) {
+	.logo { width:50%;}
+.logo img { float:left; width:100%;}
+.address { width:50%; float:right; margin-top:8px; background:url(../images/loc.jpg) no-repeat 3em .7em; padding-left:8%; font-size:10px; background-size:28px 28px;}
+.address span { font-size:10px; line-height:15px;}
+.help_languages { width:100%; float:none; overflow:auto;}
+.help_languages ul { float:none;}
+.help_languages ul li a { font-size:.8em; text-align:center; padding:0 .9em;}
+.help_languages ul li a img {}
+.slider, .search { width:100%; float:none;}
+.search ul li { display:inline-block; width:50%;}
+.search ul li a{ width:100%; text-align:center; line-height:3em; }
+.main_menu_wrapper { position:relative; height:40px; 
+background:url(../images/hamburger.png) no-repeat 90% center, linear-gradient(#E2E4E7,silver); }
+.main_menu { width:100%; position:absolute; z-index:100; display:none;top:40px;}
+.main_menu_wrapper h5 { display: block;
+position: absolute;
+z-index: 110;
+padding-left: 1em;
+top: 12px;
+font-size: 1em;
+text-shadow: 1px 1px 1px silver;
+font-weight: bold;}
+.contents { padding-top:0;}
+.main_menu ul { margin-bottom:0; height:auto; background:grey;}
+.main_menu ul li a, .main_menu ul li { display:block; float:none; width:100%; line-height:40px; font-size:13px; text-shadow:1px 1px 1px white;}
+.main_menu ul li a { border-bottom:1px solid white; background:linear-gradient(#E2E4E7,silver)}
+.main_menu ul li:last-child a { border-bottom: none;}
+.comparison_params { width:90%; display:block; padding-left:10%; margin-right:0;}
+.comparison_params ul { list-style:none;}
+.comparison_params ul li,.comparative_vehicle ul li { display:block; width:100%; text-transform:uppercase; color:grey; font-size:.8em; border-bottom:1px solid silver; line-height:2.9em;}
+.comparison_header h3 { text-transform:uppercase; font-weight:bold;}
+.comparison_header span { color:#E56C1D; font-weight:bold; font-size:45px;}
+.comparative_vehicle { width:90%; display:block; padding-left:10%; margin-right:0;}
+.compare_heads { height:200px;}
+.compare_heads img { float:left; width:100%;}
+.comparative_vehicle ul li { font-weight:bold; text-transform:capitalize; color:black;}
+.comparative_vehicle .veh_info { border-bottom:0}
+.comparison_header { padding: 2em}
+.footer1,.footer2,.footer3,.footer4 { width:90%; display:block; padding-left:10%;}
+.contents .veh_headings { width:98%; padding-left:2%;}
+.vehicles_list ul li { width:99%; margin-left:1%; float:none; display:block; margin-right:0; margin-bottom:2em;}
+.small_menu ul li a, .small_menu ul li { display:block; width:100%; margin-bottom:.5em;}
+.price { float:none; display:block; width:100%; text-align:center;}
+.veh_info { width:100%;}
+.veh_title,.veh_desc { display:block; line-height:22px;}
+.ham { width:30px; height:30px; background:url(../images/hamburger.png) no-repeat; position:relative; left:82%; top:5px; z-index:105; cursor:pointer;}
+#search_form { padding:0 1.2em;}
+#search_form label { padding-bottom:0; margin-bottom:0;}
+#search_form .form-group { margin-bottom:0; padding-bottom:0;}
+.signup_wrapper { overflow:hidden; width:100%; border:1px solid #cecece; border-radius:2px; padding:2em; margin:0 auto; background-color:#F0F2F5}
+.signup_wrapper form input, .signup_wrapper form[name="photo"] { border-radius:0 !important;}
+.signup_wrapper .form-control { border-radius:0;}
+.signup_wrapper #signup_form,.signup_wrapper #signin_form { width:100%; float:left; margin-right:1em; font-size:13px;}
+.conf_pwd { margin-left:0; margin-top:.5em; margin-bottom:.5em;}
+.signup_wrapper #signup_form { margin-right:0;}
+.signup_wrapper .form-group { margin-bottom:.5rem;}
+.signup_wrapper form legend { padding-left:1em; font-size:1.5em; font-weight:bold; text-shadow:1px 1px 1px silver}
+.forgot a { color:black; text-shadow:1px 1px 1px silver; display:block;}
+.custom_radio {width: 50%; text-indent:.5em;}
+.custom_radio label { display:block; width:100%;}
+.custom_radio label input { float:left; margin-top:4px;}
+.custom_state_control { margin-top:0 !important;}
+.search_params { width:99%; margin-left:1%; padding:1.5em; }
+.select2 { margin-bottom:.5em !important; display:block; }
+.search_result_rows { width:100%;}
+	}
+@media screen (min-width: 768px) and (max-width: 1023px) {}
+@media screen (min-width: 1024px) {}

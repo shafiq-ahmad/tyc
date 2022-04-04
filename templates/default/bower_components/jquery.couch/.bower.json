@@ -1,0 +1,18 @@
+{
+  "name": "jquery.couch",
+  "main": "./jquery.couch.js",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "homepage": "https://github.com/vkurchatkin/jquery.couch",
+  "_release": "35e3968309",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "35e396830948562291ef2757f01b90a491812f4e"
+  },
+  "_source": "https://github.com/vkurchatkin/jquery.couch.git",
+  "_target": "*",
+  "_originalSource": "jquery.couch",
+  "_direct": true
+}

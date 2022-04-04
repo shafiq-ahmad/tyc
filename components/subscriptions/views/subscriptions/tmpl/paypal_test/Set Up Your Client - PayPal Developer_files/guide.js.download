@@ -1,0 +1,35 @@
+'use strict';
+
+requirejs.config({
+  paths: {
+    jquery: '/components/jquery/dist/jquery.min',
+    jsCookie: '/components/js-cookie/src/js.cookie',
+    master: '/js/master'
+  },
+  shim: {
+    jquery: {
+      exports: 'jQuery'
+    }
+  }
+});
+
+define(['jquery', 'jsCookie', 'master'], function ($, jsCookie) {
+  var $sdkPicker = $('.dx-sdk-picker');
+
+  // Enable the SDK picker on each page.
+  $sdkPicker
+    .on('click', '.dx-btn', function () {
+      var $selected;
+      var cookie;
+
+      try {
+        $selected = $(this);
+        cookie = JSON.parse(jsCookie.get('dx-sdk-picker-preferences') || '{}');
+
+        cookie[$sdkPicker.attr('platform')] = $selected.attr('data-value');
+        jsCookie.set('dx-sdk-picker-preferences', cookie, { domain: '.paypal.com' });
+      } catch (err) {
+        // no-op... can't do anything!
+      }
+    });
+});

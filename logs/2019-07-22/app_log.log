@@ -1,0 +1,10 @@
+DB Error: time is 07:46:27 PM message: Last SQL query: INSERT INTO users (is_buyer,full_name,e_mail,country,phone,user_name,user_pass,gender) VALUES ('1','Shafique Ahmad','scmnst@gmail.com','2','564642542','root','63a9f0ea7bb98050796b649e85481845','1');<br/>Error#: 1062<br/>Desc: Duplicate Entry  ' Root '  For   ' User Name ' <br/>
+
+DB Error: time is 07:46:46 PM message: Last SQL query: INSERT INTO user_subscriptions(user_id, subscription_id) VALUES (85, 1) <br/>Error#: 1054<br/>Desc: Unknown Column  ' Subscription Id '  In  ' Field List ' <br/>
+
+DB Error: time is 07:55:06 PM message: Last SQL query: INSERT INTO user_subscriptions(user_id, subscription_id) VALUES (86, 1) <br/>Error#: 1054<br/>Desc: Unknown Column  ' Subscription Id '  In  ' Field List ' <br/>
+
+DB Error: time is 07:59:32 PM message: Last SQL query: INSERT INTO users (is_buyer,full_name,e_mail,country,phone,user_name,user_pass,gender) VALUES ('1','Shafique Ahmad','scmnst@gmail.com','2','564642542','rootms','63a9f0ea7bb98050796b649e85481845','1');<br/>Error#: 1062<br/>Desc: Duplicate Entry  ' Rootms '  For   ' User Name ' <br/>
+
+log: time is 07:59:59 PM message: Your account ref#:88 has been created.
+

@@ -1,0 +1,8 @@
+code {display:block;background:#FFF;border:#CCC 1px solid;border-radius:4px;padding:10px;line-height:1.7em;overflow: auto;font-family:"Courier New", Courier, monospace;font-size:0.95em;color: #000;}
+.code-elem{ color: #039; }
+.code-str{ color:#090; }
+.code-comment{ color: #BBB; }
+.code-phptags{ color:#F00; font-weight:bold; }
+.code-scripttags{ color:#900; }
+.code-styletags{ color:#F0F; }
+.code-punctuation{ color:#F60; font-weight:bold;}

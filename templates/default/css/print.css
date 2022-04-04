@@ -1,0 +1,54 @@
+
+/**
+Package: Point of sale
+version: 1.0.0
+URI: https://webapplics.com/apps/pos/1.0.0/docs
+Author: Shafique Ahmad
+Author URI: http://webapplics.com/
+Description: 
+copyright  Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body {background-color:#fff;}
+input,textarea{color:gray;padding:1px 3px;}
+a[href]:after {content: " (" attr(href) ")";}
+a[href]:after {content:none !important;}
+#user .logout{display:none;}
+#left{display:none;}
+#right {display:none;}
+.no-print{display:none;}
+th.no-print{display:none;}
+td.no-print{display:none;}
+.btn-group{display:none;}
+.screen {display:none !important;width:0;height:0;}
+.left-menu {display:none;}
+.top-menu {display:none;}
+#main{padding:0 5px 0 5px;}
+
+@media (min-width: 6in) and (max-width: 9in){
+	#main{}
+}
+fieldset{border: none;}
+.form-buttons {display:none;}
+.grid-label {font-weight:bold;}
+.inputbox {border:none;}
+.th {font-weight:bold;}
+.modal {display:none;}
+.doc-title{font-size:14px;font-weight:normal;font-variant:italic;}
+.form .row>div{float:left;width:25%;}
+.cell {border:1px solid #888;float:left;height:20px;}
+.th .cell {border:1px solid #888;height:20px;}
+
+.dataTables_paginate{display:none;}
+.dataTables_length{display:none;}
+.dataTables_filter{display:none;}
+.dt-buttons{display:none;}
+table.dataTable thead .sorting:after{content:' ' !important;}
+table.dataTable thead .sorting_asc:after{content:' ' !important;}
+table.dataTable thead .sorting_desc:after{content:' ' !important;}
+
+.barcode{margin:0 auto;display:none;/*display:table;*/}
+

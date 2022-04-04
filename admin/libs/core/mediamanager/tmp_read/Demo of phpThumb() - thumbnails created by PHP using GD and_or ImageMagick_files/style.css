@@ -1,0 +1,40 @@
+BODY, TD {
+	font-family: sans-serif;
+	font-size: 9pt;
+	color: #003300;
+	background-color: #EFEFEF;
+}
+H1 {
+	font-family: sans-serif;
+	font-size: 32pt;
+	font-weight: bold;
+	color: #330033;
+	margin: 0px;
+}
+H2 {
+	font-family: sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #330000;
+}
+H3 {
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #003333;
+}
+A:link {
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+A:visited {
+	color: #003366;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #33CC00;
+	text-decoration: underline;
+}

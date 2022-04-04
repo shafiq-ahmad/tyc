@@ -1,0 +1,8 @@
+Error: time is 01:24:21 PM message: File not found: D:\wamp64\www\tyc\components\shipping\models\subscriptions.php
+
+DB Error: time is 01:25:54 PM message: Last SQL query: SELECT IFNULL(us.id,0) AS id, us.dated,us.expiry, u.full_name, IFNULL(s.title,'No Subscription') AS subscription_title, IFNULL(max_broadcast,0) AS max_broadcast, s.msg_broadcast_reach_max, IFNULL(s.cost,0) AS cost, IFNULL(s.duration,0), s.title, s.details FROM users AS u LEFT JOIN user_subscriptions AS us ON (u.id = us.user_id) LEFT JOIN subscriptions AS s ON (s.id = us.subscription_id) WHERE s.published=1 AND us.user_id = 1 <br/>Error#: 1146<br/>Desc: Table  ' Tycontra Mosapp.subscriptions '  Doesn ' T Exist<br/>
+
+Error: time is 01:39:05 PM message: File not found: controller D:\wamp64\www\tyc\components\articles\views\artile\view.php
+
+Error: time is 01:39:05 PM message: View is not defined in Controller.display()
+

@@ -1,0 +1,53 @@
+
+@media (min-width: 6in) and (max-width: 9in){
+	#main{}
+}
+fieldset{margin-top:10px;}
+fieldset.form-bill-total {padding:5px;width:310px;}
+.cell {border:1px solid #000;padding:3px;}
+.th .cell {border:1px solid #000;float:left;padding:3px;}
+.row>div{float:left;font-size:9px;}
+div.form-bill-total .row:after{content:"";clear:both;display:table;}
+div.form-bill-total .row label{width:90px;}
+div.form-bill-total .row div > div{border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;line-height:12px;margin:0;padding:1px 1px 0 5px;width:200px;}
+div.form-bill-total .row div:last-child > div{border-bottom:1px solid black;}
+div.form-bill-total .row>div label{border-top:1px solid black;border-left:1px solid black;float:left;line-height:16px;margin:0;padding:1px 1px 0 5px;}
+div.form-bill-total .row>div:last-child label{border-bottom:1px solid black;}
+div.form-bill-total .row>div div input,div.form-bill-total .row>div div select{line-height:16px;height:16px;margin:0;padding:0;}
+div.form-bill-total .row>div div select{border-radius:0;font-size:9px;}
+/*---------- header Area ----------*/
+#header {margin:0;padding;10px 0;}
+#logo {height:40px;}
+#company {font-size:20px;}
+#company .title{text-align:center;}
+#company .address{font-size:14px;padding-top:2px;text-align:center;}
+#user {font-size:9px;margin-top:10px;padding:2px 0;}
+
+/*---------- Componant Area ----------*/
+#main {font-size:9px;width:5.83in;}
+#componant .com-head{margin:20px 0 10px 0;}
+.table-responsive{min-height:50px;overflow:visible;}
+.control-label{padding:0px}
+
+.frm_sale_art {}
+.frm_sale_art .row .title {width:230px;}
+.frm_sale_art .row .qty, .frm_sale_art .row .scheme {width:65px;}
+.frm_sale_art .row .price {width:75px;}
+.frm_sale_art .row .cost_total, .frm_sale_art .row .total {width:80px;}
+
+.input-sm{border:none;border-radius:0;font-size:9px;height:12px;padding:3px;}
+.col-sm-1{width:45px;}
+.col-sm-2{width:100px;}
+.col-sm-3{width:60px;}
+.col-sm-4{width:120px;}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{background-color:white;}
+/*---------- Forms ----------*/
+.form {font-size:9px;}
+.grid div label {font-weight:normal;line-height:12px;margin:0;text-align:right;}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+Error: time is 11:09:07 AM message: File not found: D:\wamp64\www\tyc\components\sales\models\order.php
+
+Error: time is 11:09:56 AM message: File not found: D:\wamp64\www\tyc\components\sales\models\order.php
+
+DB Error: time is 11:17:02 AM message: Last SQL query: UPDATE users SET balance_subscriptions=balance_subscriptions+200WHERE if = 82 <br/>Error#: 1064<br/>Desc: You Have An Error In Your SQL Syntax; Check The Manual That Corresponds To Your MySQL Server Version For The Right Syntax To Use Near  ' If = 82 '  At Line 1<br/>
+
+DB Error: time is 01:23:45 PM message: Last SQL query: INSERT INTO sales () VALUES ();<br/>Error#: 1364<br/>Desc: Field  ' Sale Date '  Doesn ' T Have A Default Value<br/>
+

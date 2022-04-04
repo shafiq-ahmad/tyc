@@ -1,0 +1,104 @@
+
+/**
+Package: Point of sale
+version: 1.0.0
+URI: https://webapplics.com/apps/pos/1.0.0/docs
+Author: Shafique Ahmad
+Author URI: http://webapplics.com/
+Description: 
+copyright  Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body{background-color:#f1f1f1;}
+a{color:blue;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+input,textarea{color:gray;font-size:14px;padding:3px 5px;}
+label{font-size:14px;}
+table{font-size:14px;}
+.print{display:none;}
+.com-head h3{font-weight:bold;text-transform:uppercase;}
+.frm_sale_art .row {width:100%;}
+
+	table,th,td{border-collapse:collapse;border:solid 1px #ccc;padding:5px 20px;text-align:center;}
+	th{background:#333;color:#fff;}
+	tr:nth-child(2n), div.tr:nth-child(2n){background:#f1f1f1;}
+	td:hover,.tr div.cell:hover{color:#fff;background:#CA293E;}
+	td:focus, .tr div.cell:focus{background:#f44;}
+	#center{width:82%;float:right;margin:0;}
+	#frm_sale_art .row label{display:none;}
+	.form-inline .row{height:25px;margin-bottom:0;}
+	.form-inline .row > div{padding:0 5px 0 0;}
+	.form-inline .row label, .form-inline .row input, .form-inline .row select{height:25px;line-height:25px;}
+	.form-inline .btn-group .row{height:auto;}
+	.form-inline .btn-group .btn{height:auto;}
+	.form-inline .checkbox{width:auto !important;}
+	.table-responsive{min-height:350px;}
+	.grid div label{line-height:34px;text-align:right;}
+	/*---------- Componant Area ----------*/
+	#componant{float:left;position:relative;width:100%;}
+	#componant .cell{height:28px;padding:0 5px;}
+	#componant .row div {overflow:hidden;}
+	#componant .row .total,#componant .row .price,#componant .row .cost_total,#componant .row .disc,#componant .row .retail,#componant .row .qty{padding:0;text-align:center;/*width:60px;*/}
+	#componant .row .qty1, #componant .row .disc-terms, #componant .row .scheme{padding:0;text-align:center;/*width:60px;*/}
+	#componant .row .qty input,#componant .row .price input,#componant .row .disc input{text-align:center;}
+	#componant .row .article_code,#componant .row .item{padding:0;text-align:center;/*width:130px;*/}
+	#componant .row .title{padding:0;/*width:230px;*/}
+	#invArticles .row .title{padding:0 0 0 5px;}
+	#componant .row .stock{padding:0;text-align:center;/*width:67px;*/}
+	#componant .row .action{padding:0;text-align:center;/*width:40px;*/}
+	#invArticles .row input{padding:0;width:100%;}
+
+
+.doc-title{font-size:14px;font-weight:bold;margin:10px 0;text-align:center;}
+
+#message span, .form-message span{background-color:#8f8;border-radius:5px;color:black;display:block;font-size:12px;font-weight:bold;line-height:30px;margin:5px 0;text-align:center;}
+#message span.info, .form-message span.info{background-color:#88f;}
+#message span.warning{background-color:gold;}
+#message span.error{background-color:#f88;}
+fieldset{border:1px solid #ddd;margin:0;padding:10px;}
+.grid-label{color:darkblue;font-size:10px;font-weight:bold;}
+.left-menu li a{font-size:14px;margin:10px;}
+.inputbox{border:1px solid #ccc;}
+.bordered .row{border-bottom:1px solid #bbb;padding:7px 0;}
+.row .cell{border:1px solid #bbb;}
+.th, .cell{line-height:25px;}
+.th{font-weight:bold;}
+#net_total{background-color:red;color:white;}
+#cash{background-color:green;color:white;}
+#credit{background-color:gold;color:black;}
+/*---------- header Area ----------*/
+#header{float:left;margin:0 0 5px 0;padding;5px 0;width:18%;}
+#logo{background-position:20% 50%;background-size:75%;background-repeat:no-repeat;height:80px;}
+#logo img{display:none;}
+#company{font-size:28px;line-height:30px;}
+#company .address{font-size:16px;line-height:30px;}
+#user{font-size:12px;padding:0 0 10px 0;}
+
+
+/*---------- Componant Area ----------*/
+#componant{font-size:14px;position:relative;width:100%;}
+.form fieldset{margin:0;overflow:hidden;}
+.form-bill-total{background-color:#ccc;bottom:0px;position:fixed;height:100px;right:5px;width:80%;}
+.form-bill-total label{display:block;}
+.form-bill-total .row>div label{line-height:14px;text-align:left;}
+.form-bill-total .row>div div{width:90%;}
+.form-bill-total .row>div input{font-size:18px;font-weight:bold;padding:20px 5px;}
+.form-bill-total .row>div{float:left;width:13%;}
+.table .item, .table .qty, .table .qty {text-align:center;}
+/*---------- Forms ----------*/
+
+.form{font-size:10px;}
+.form .row{width:100%;}
+
+
+/*---------------------*/
+@media print {
+	a[href]:after {content: " (" attr(href) ")";}
+	a[href]:after {content:none !important;}
+}
+
+.barcode{margin:0 auto;display:none;}

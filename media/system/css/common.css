@@ -1,0 +1,35 @@
+
+.select2-wrapper .select2-container{
+	max-width:115px;
+}
+
+.select2-wrapper .input-group-addon{
+	background-color:#e9ecef !important;
+	border:1px solid #ced4da !important;
+	border-radius:5px !important;
+	border-top-right-radius:0 !important;
+	border-bottom-right-radius:0 !important;
+	padding:0 5px 0 10px;
+	line-height:30px;
+	min-width:100px;
+	text-align:left;
+}
+
+.input-group-prepend .input-group-text{
+	padding:0 5px 0 10px;
+	min-width:100px;
+	text-align:right;
+}
+.margin-left .form-group{margin-left:60px;}
+input.frm_input, select.frm_input{min-width:115px;max-width:115px;}
+
+.select2-wrapper .input-group-sm .input-group-addon{
+	line-height:28px;
+}
+
+.select2-wrapper .input-group-sm span.select2-container{
+	width:60%;
+}
+
+
+fieldset{width:100%;}

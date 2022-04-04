@@ -1,0 +1,58 @@
+Error: time is 01:45:19 PM message: File not found: D:\wamp64\www\tyc\components\sales\models\return.php
+
+Error: time is 01:46:07 PM message: File not found: D:\wamp64\www\tyc\components\sales\models\return.php
+
+Error: time is 04:27:34 PM message: File not found: D:\wamp64\www\tyc\components\sales\views\sale\tmpl\get.php
+
+DB Error: time is 06:34:28 PM message: Last SQL query: SELECT v.*, u.full_name FROM vehicles AS v
+INNER JOIN users ON (v.user_id=u.id)
+WHERE vid=50<br/>Error#: 1054<br/>Desc: Unknown Column  ' U.full Name '  In  ' Field List ' <br/>
+
+DB Error: time is 06:36:21 PM message: Last SQL query: SELECT v.*, u.full_name FROM vehicles AS v
+INNER JOIN users AS u ON (v.user_id=u.id)
+WHERE vid=50<br/>Error#: 1054<br/>Desc: Unknown Column  ' Vid '  In  ' Where Clause ' <br/>
+
+Error: time is 09:23:15 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:24:57 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:27:20 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+DB Error: time is 09:27:20 PM message: Last SQL query: INSERT INTO user_reviews (rating,content,submit_review) VALUES ('1','','');<br/>Error#: 1054<br/>Desc: Unknown Column  ' Submit Review '  In  ' Field List ' <br/>
+
+Error: time is 09:27:52 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:27:52 PM message: File not found: controller D:\wamp64\www\tyc\components\users\views\user_profile\view.php
+
+Error: time is 09:27:52 PM message: View is not defined in Controller.display()
+
+Error: time is 09:32:36 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:45:54 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:47:13 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:47:33 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:48:07 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:48:28 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:51:00 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:52:43 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:53:00 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:54:03 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:54:15 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:54:19 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:54:22 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:55:16 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+
+Error: time is 09:58:22 PM message: File not found: D:\wamp64\www\tyc\components\users\views\public_profile\tmpl\json.php
+

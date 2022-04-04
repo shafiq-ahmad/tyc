@@ -1,0 +1,62 @@
+{"business_name":"Tycoon Traders","business_address1":"1840 E GARVEY AVE SOUTH WEST","business_address2":"Covina, CA 91791","business_logo":"templates\/default\/assets\/images\/logo.jpg","menu_compare":"Compare","menu_login_register":"Login\/Register","menu_help":"Help","menu_home":"Home","menu_services":"Services","menu_faqs":"FAQs","menu_contact_us":"Contact Us","menu_terms_conditions":"Terms & Conditions","menu_privacy":"Privacy","menu_general_operations":"General Operations","menu_my_profile":"My Profile","menu_my_subscriptions":"My Subscriptions","menu_vehicle_inventory":"My Inventory","menu_upload_vehicle":"Upload Vehicle","menu_sign_out":"Sign Out","menu_public_profile":"Public Profile","menu_administrator":"Administrator","management":"Management","condition":"Condition","vehicles":"Vehicles","vehicle":"Vehicle","new":"New","used":"Used","accidented":"Accidented","manufacturers":"Manufacturers","select_":"Select...","year":"Year","price_range":"Price Range","transmission":"Transmission","drive":"Drive","4wd":"4wd","6wd":"6wd","automatic":"automatic","manual":"manual","regular":"Regular","search_":"Search...","shipping_calculator":"Shipping Calculator","origin_country":"Origin Country","origin_state_city":"Origin State\/City","origin_port":"Origin Port","dest_country":"Dest. Country","dest_port":"Destination Port","select_state_city":"Select State\/City","select_port":"Select Port","reset":"Reset","calculate":"Calculate","shipping":"Shipping","towing":"Towing","services":"Services","clearance":"Clearance","total":"Total","view_all":"View All","brand_new_vehicles":"Brand New Vehicles","used_vehicles":"Used Vehicles","spare_parts":"Spare Parts","copyright":"Copyright","sign_in":"Sign In","login_":"Login","password_":"Password","forgot_your_password":"Forgot your password","forgot_your_sign_in":"Forgot your sign in","remember_me":"Remember Me","full_name_":"Full Name ..","email":"E-mail","phone":"Phone","confirm_password":"Confirm Password","male":"Male","female":"Female","register_signup":"Register\/Signup","upload_photo":"Upload Photo","send_us_message":"Send us inquiry\/message","full_name":"Full Name","email_":"email@example.com","subject":"Subject","message":"Message","send_message":"Send Message","location":"Location","sales_hours":"Sales Hours","website":"Website","seller_inventory":"Seller inventory","seller_reviews":"Seller reviews","write_review":"Write a review","contact_seller":"contact seller","change_password":"Change Password","label_name":"Name:","label_login":"Login:","label_country":"Country:","label_phone":"Phone:","label_email":"E-mail:","label_address":"Address:","label_change_photo":"Change your photo:","label_":"","back":"Back","update_profile":"Update Profile","user_subscription":"My Subscriptions","show":"Show","entries":"entries","id":"ID#","user":"User","subscription":"Subscription","expiry":"Expiry","action":"Action","no_data_available":"No data available","next":"Next","previous":"Previous","showing":"showing","to":"to","owner":"Owner","model":"Model","make":"Make","mileage":"Mileage","image":"Image","broadcast":"Broadcast","retract":"Retract","remove":"Remove","update_vehicle_details":"Upload Your Vehicle Details and media","title":"Title","price":"Price","fuel_economy":"Fuel Economy","interior_color":"Interior Color","exterior_color":"Exterior Color","upload_vehicle_images":"Upload Vehicle Images","save_vehicle":"Save Vehicle","add_to_watchlist":"Add to Watchlist","btn_save":"Save","read_more":"Read More","miscellaneous":"Miscellaneous","no_country_selected":"No Country Selected","state_city_selected":"Select State\/City","no_state_city_selected":"No State\/City Selected","back_to_inventory":"Back to inventory","user_subscriptions":"My Subscriptions","update_password":"Update Password","confirm_new_password":"Confirm New Password","enter_new_password":"Enter New Password","change_the_password":"Change The Password","your_phone":"Your Phone..","your_email":"Your Email..","your_name":"Your Name..","your_message":"Your Message..","would_you_recommend":"Would you recommend this dealer?","overall_experience":"overall experience","buying_process":"buying process","customer_service":"customer service","would_i_recommend":"Would I recommend this dealer? ","write_a_review":"Write a review","submit_review":"SUBMIT REVIEW","your_review":"Your Review:","dearlers_rating":"Dealer's Rating","seller_notes":"Seller's Notes:","subscribe":"Subscribe","newsletters":"Newsletters","vehicle_details":"Vehicle Details","instant_savings":"INSTANT SAVINGS","our_prices":"Our Prices","msrp":"MSRP","body":"Body","seller":"Seller","fuel_type":"Fuel Type","engine":"Engine","features_options":"Features & Options","profile":"Profile",
+	"no_port_selected":"No Port Selected",
+	
+	
+	
+	"i_am_a":"I am a ",
+	"seller":"Seller ",
+	"buyer":"Buyer ",
+	"register_or_signup":"Signup OR Register",
+	"phone":"Phone ...",
+	"main_navigation":"Main Navigation",
+	"vehicle_uploaded":"Vehicle Uploaded",
+	"image_limit_exceded":"Image Limit Exceded",
+	"vehicle_finalize":"Vehicle Finalize",
+	"vehicle_finalize_procede":"Admin review is needed. You will be notify when it's done",
+	
+	
+	
+	"no_privileges_contact_admin":"No privilages, please contact admistrator!",
+	
+	
+	"user_inactive_msg":"Your account is temperoriy blocked for Admin Review, Please contact Adminstrator for furthor information.",
+	"vehicle_type":"Vehicle Type",
+	"cover_image":"Set as Cover",
+	"status_":"Status: ",
+	"admin_remarks":"Admin Remarks ",
+	"vehicle_visible_":"New Vehicle",
+	"vehicle_visible_1":"Online",
+	"vehicle_visible_2":"Offline",
+	"vehicle_visible_3":"Admin approval awaiting",
+	"vehicle_visible_4":"Draft",
+	"vehicle_visible_notes_":"Upload your vehicle now",
+	"vehicle_visible_notes_1":"Your vehicle is live",
+	"vehicle_visible_notes_2":"Your vehicle is not visible to public, you need to broadcast it. or You may need to buy a subscription",
+	"vehicle_visible_notes_3":"Your vehicle is on Admin desk for review",
+	"vehicle_visible_notes_4":"Your vehicle is in draft mode. check the finalize button to proceed. After this you will not able to change data and upload more image",
+	
+	"amount_payable":"Amount Payable",
+	"choose_payment_methods":"Choose Payment method",
+	"do_u_want_2buy_title":"Do you want to buy?",
+	"do_u_want_2buy_message":"Please enter amount and press Continue",
+	"new_vehice_require_subscription_msg":"To upload a vehicle, please buy a suitable subscription. Thank you",
+	"subscriptions_getting_started_title":"Subscriptions Getting Started",
+	"subscriptions_getting_started_body":"Please buy a subscription to enjoy our services.<br>Example below:",
+	"subscriptions_getting_started_example":"service*qty",
+	"continue":"Continue",
+	"review_exist":"Review Exists",
+	"order_success":"Order Successfull",
+	"menu_my_orders":"My Orders",
+	"confirm_cancel":"Confirm Cancel",
+	"order_canceled":"Order Canceled",
+	"menu_my_invoices":"My Invoices",
+	
+	"order_subscription_now":"Order Subscription Now",
+	"subscrtions":"Subscrtions",
+	"purchase_history":"Purchase History",
+	"spend_history":"Spend History",
+	
+	"wire1_title":"Wire Payment Instructions:",
+	"wire1_info":"<ul><li><span class='title'>Bank Name:</span><span class='data'>ADIB</span></li><li><span class='title'>Routing #:</span><span class='data'>705040116</span></li><li><span class='title'>IBAN #:</span><span class='data'>AE-20-050-0000000018595387</span></li><li><span class='title'>A/C #:</span><span class='data'>18595387</span></li><li><span class='title'>Swift Code:</span><span class='data'>ABDIAEAD</span></li><li><span class='title'>Location:</span><span class='data'>Sharjah UAE</span></li></ul>",
+	"buy_subscription":"Buy Subscription"
+}

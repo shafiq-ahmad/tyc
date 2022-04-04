@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)http://www.developphp.com/video/PHP/Crop-Thumbnail-Image-Function-Tutorial-jpg-gif-png -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="author" content="Adam Khoury">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="PHP, Crop Thumbnail Image Function Tutorial jpg gif png, Image Processing, video, tutorial, training, learn, guide, code, script, program, application, software, development, web, site, school, education, class, website, online, course, free, adam khoury">
+<meta name="Description" content="Video: Crop Thumbnail Image Function Tutorial jpg gif png. This tutorial resides in the PHP video index under the Image Processing section. If you find this lesson useful, we have many more exercises that are sure to please you.">
+<title>PHP Crop Thumbnail Image Function Tutorial jpg gif png</title>
+<link rel="icon" href="http://www.developphp.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/main3.css">
+<link rel="stylesheet" href="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/ash.css">
+<script src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/osd.js.download"></script><script src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(6).txt"></script><script src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/ca-pub-2379004690904460.js.download"></script><script src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/main1.js.download"></script>
+<script src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/ash.js.download"></script>
+<style>
+.ad_leaderboard { padding:30px 0px; text-align:center; }
+#ad_160x600 { float:right; width:160px; height:600px; margin:0px 0px 0px 25px; }
+.ad_mobile { display:none; clear:left; background:#FFF; width:auto; padding:0px 0px 20px 0px; text-align:center; }
+
+.banner_on_tuts { padding:0px 0px 30px 0px; text-align:center; }
+.banner_on_tuts_mobile { display:none; height:auto; text-align:center; }
+
+#social{ position:fixed; top:230px; left:0px; width:50px; height:auto; padding:12px 0px; background:#EFEFEF; border-radius: 0px 7px 7px 0px; border:1px solid #AAA; text-align:center; transition: width 0.2s linear 0s; }
+#social:hover{ width:80px; }
+#social > button{ display:block; background-color:transparent; background-image:url(/style/share_icon.png); width:36px; height:36px; border:none; cursor:pointer; margin:4px auto; opacity:0.6; transition: opacity 0.2s linear 0s; }
+#social > button:hover{ opacity:1; }
+#social > button:nth-child(1){background-position:0px;}
+#social > button:nth-child(2){background-position:-36px;}
+#social > button:nth-child(3){background-position:-72px;}
+#social > button:nth-child(4){background-position:-252px;}
+
+#contentbody{ float:left; width:78%; padding:0px; margin-bottom:200px; }
+#contentbody > #contentbodychild{ min-height:700px; border:1px solid #666; border-left:none; background:#FFF; padding:20px 25px 80px 80px; }
+#contentbody > #contentbodychild > h1{ }
+#contentbody > #contentbodychild > h2{ }
+
+#rel_tuts{ float:left; width:22%; }
+#rel_tuts > div{ padding:0px 0px 50px 0px; }
+#rel_tuts > div > h3 { margin:0px; padding:10px 0px 10px 15px; }
+#rel_tuts > div > h3 > a { text-decoration:none; }
+#rel_tuts > div > h4 { margin:0px; padding:10px 0px 10px 25px; color:#333; }
+#rel_tuts > div > h4 > a { text-decoration:none; }
+#rel_tuts > div > a { display:block; height:24px; overflow:hidden; margin:0px; padding:3px 0px 3px 25px; line-height:2.0em; text-decoration:none; font-size:15px; }
+#rel_tuts > div > a:hover { text-decoration:underline; }
+#rel_tuts > div > a:before { content:url(/style/ul_doc.png) " "; }
+#rel_tuts > div > span { display:block; position:relative; right:1px; height:24px; overflow:hidden; margin:0px; padding:0px 20px 6px 25px; line-height:2.0em; background:#FFF; color:#666; font-size:15px; border:1px solid #777; border-left:none; border-right:none;}
+#rel_tuts > div > span:before { content:url(/style/ul_doc.png) " "; }
+
+#db_body > div {clear:left; white-space:-moz-pre-wrap; white-space:-o-pre-wrap; white-space:pre-wrap; word-wrap:break-word; line-height:1.5em; margin:0px 0px 0px 0px;}
+#db_body > div > p > a{ text-decoration: underline; }
+#db_body > div > p{ margin:0px; padding:0px; }
+#db_body > div > h1,h3,h4{ margin:0px 0px 7px 0px; font-weight:bold; }
+#db_body > div > h2{ margin:0px 0px 0px 0px; padding-top:30px; font-size:21px; }
+#db_body > div > ul,ol > li{ line-height:0.7em; }
+#db_body > div > small{ }
+#db_body > div > small > a{ text-decoration:underline; }
+#db_body > div > small > b{ color: #999; }
+#db_body > div > small > em{ color:#F60; font-weight:bold; }
+#db_body > div > fieldset{ background:#222; border:none; border-radius:4px; font-size:0.95em; font-family:"Courier New", Courier, monospace; color: #CCC; font-style: normal; padding-left:20px; }
+#db_body > div > fieldset > legend{background:#222; border-bottom:none; border-radius:4px 4px 0px 0px; font-size:0.65em; letter-spacing:1px; color: #FAA901; padding:0px 10px; height:20px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; font-style:normal; }
+#db_body > div > hr{ background:#CCC; height:1px; border: none;}
+.docsniplink{display:inline-block; float:left; margin-left:10px; background:#FFF linear-gradient(#EAF4FF, #D2E9FF); border:#95CAFF 1px solid; border-top:none; font-size:13px; padding:0px 10px; color: #06C; text-decoration:none;}
+.docsniplink:hover{border: #06C 1px solid; border-top:none; text-decoration:none;  }
+
+div#videobox{ margin: 0px auto 0px auto; width:700px; height:394px; z-index:5;}
+div#videobox > iframe{ border:none; width:700px; height:394px; }
+img#vid_thumb{width:100px;}
+@media screen and (max-device-width: 1100px) {
+.ad_leaderboard { display:none; }
+#ad_160x600 {display:none;}
+.ad_mobile { display:block; }
+.banner1 { display:none; }
+.banner1mobile { display:block; }
+#social{ display:none; }
+#contentbody{ font-size:12px; float:none; width:auto; margin-right:0px; padding:0px; overflow-x:hidden; }
+#contentbody > #contentbodychild{ min-height:500px; border:none; padding:20px; box-shadow:none; }
+#contentbody > #contentbodychild > h1{ font-weight:bold; margin:0px 0px 0px 0px; font-size:14px; }
+#contentbody > #contentbodychild > h2{ font-weight:bold; margin:0px 0px 0px 0px; font-size:12px; }
+#rel_tuts{ float:none; width:auto; background:#FFF; }
+#rel_tuts > div{ min-height:50px; padding-bottom:30px; font-size:12px; }
+#rel_tuts > div > h3 { background:#FFF; margin:40px 0px 0px 0px; padding:40px 0px 8px 10px; border-top:3px solid #DDD; }
+#rel_tuts > div > h4 { background:#FFF; font-size:13px; }
+#rel_tuts > div > a { font-size:12px; }
+#rel_tuts > div > span { font-size:12px; }
+#db_body > div {white-space:-moz-pre-wrap; white-space:-o-pre-wrap; white-space:pre-wrap; word-wrap:break-word; line-height:1.5em; margin:0px 0px;}
+#db_body > div > fieldset{ background:#222; border:none; border-radius:4px; font-size:9px; font-family:"Courier New", Courier, monospace; color: #CCC; font-style: normal; padding-left:10px; }
+#db_body > div > h2{ margin:0px 0px 0px 0px; font-weight:bold; border-top:#CCC 1px solid; padding-top:10px; font-size:12px; }
+#db_body > div > h1{ font-weight:bold; font-size:12px; }
+.docsniplink{display:inline-block; float:left; margin-left:10px; background:#FFF linear-gradient(#EAF4FF, #D2E9FF); border:#95CAFF 1px solid; border-top:none; font-size:10px; padding:0px 10px; color: #06C; text-decoration:none;}
+code{ font-size:8px; }
+
+div#videobox{ margin: 10px auto 10px auto; width:300px; height:169px;}
+div#videobox > iframe{ border:none; width:300px; height:169px; }
+}
+</style>
+<link rel="preload" href="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(7).txt" as="script"><script type="text/javascript" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(7).txt"></script><link rel="preload" href="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(8).txt" as="script"><script type="text/javascript" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(8).txt"></script><link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190506/r20190131/show_ads_impl.js" as="script"></head>
+<body onload="ash()">
+<div id="mast">
+    <div id="host_sol_top"><a href="http://www.developphp.com/hosting.php"><b>☁</b> Hosting Solutions</a></div>
+    <div id="mobile_top">
+      <img src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/helmet_logo_vector.png" alt="mobile_logo" onclick="window.location=&#39;http://www.developphp.com&#39;;">
+      <a href="http://www.developphp.com/Table-of-Contents">Table of Contents</a>
+    </div>
+    <div id="mastsealborder"><div id="mastseal" onclick="window.location=&#39;http://www.developphp.com/&#39;;"><img id="sealfront" alt="seal_front" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/mastseal.png"><img id="sealback" alt="seal_back" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/mastsealback.png"></div></div>
+    <div id="searchbox"><form id="searchform" action="http://www.developphp.com/search.php" method="get"><input type="hidden" name="f" id="f" value="vid"><input placeholder="search by keywords" type="text" name="q" id="q" value="" required=""><button type="submit" id="searchbtn">🔎</button></form></div>
+    <div id="mastmenu">
+      <button id="btn1" onclick="toggle(&#39;menu1&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">HTML▾</button>
+      <div id="menu1" style="left: 235px; height: 0px;">
+        <a href="http://www.developphp.com/lib/HTML#Fundamentals">Fundamentals</a>
+        <a href="http://www.developphp.com/lib/HTML#Elements">Elements</a>
+        <a href="http://www.developphp.com/video/HTML">Video Tutorials</a>
+      </div>
+      <button id="btn2" onclick="toggle(&#39;menu2&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">CSS▾</button>
+      <div id="menu2" style="left: 308px; height: 0px;">
+        <a href="http://www.developphp.com/lib/CSS#Fundamentals">Fundamentals</a>
+        <a href="http://www.developphp.com/lib/CSS#Value-Reference">Value Reference</a>
+        <a href="http://www.developphp.com/lib/CSS#Selectors">Selectors</a>
+        <a href="http://www.developphp.com/lib/CSS#At-Rules">At Rules</a>
+        <a href="http://www.developphp.com/lib/CSS#Modules">Modules</a>
+        <a href="http://www.developphp.com/lib/CSS#Properties">Properties</a>
+        <a href="http://www.developphp.com/video/CSS">Video Tutorials</a>
+      </div>
+      <button id="btn3" onclick="toggle(&#39;menu3&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">JavaScript▾</button>
+      <div id="menu3" style="left: 370px; height: 0px;">
+        <a href="http://www.developphp.com/lib/JavaScript#Fundamentals">Fundamentals</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Objects">Objects</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Events">Events</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Operators">Operators</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Statements">Statements</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Properties">Properties</a>
+        <a href="http://www.developphp.com/lib/JavaScript#Methods">Methods</a>
+        <a href="http://www.developphp.com/video/JavaScript">Video Tutorials</a>
+      </div>
+      <button id="btn4" onclick="toggle(&#39;menu4&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">PHP▾</button>
+      <div id="menu4" style="left: 468px; height: 0px;">
+        <a href="http://www.developphp.com/lib/PHP#Fundamentals">Fundamentals</a>
+        <a href="http://www.developphp.com/lib/PHP#Functions">Functions</a>
+        <a href="http://www.developphp.com/video/PHP">Video Tutorials</a>
+      </div>
+      <button id="btn5" onclick="toggle(&#39;menu5&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">Flash▾</button>
+      <div id="menu5" style="left: 530px; height: 0px;">
+        <a href="http://www.developphp.com/video/Flash">Video Tutorials</a>
+      </div>
+      <button id="btn6" onclick="toggle(&#39;menu6&#39;,this)" style="background: linear-gradient(rgb(255, 230, 183), rgb(255, 189, 89)) rgb(255, 255, 255);">Graphics▾</button>
+      <div id="menu6" style="left: 598px; height: 0px;">
+        <a href="http://www.developphp.com/video/Graphics">Video Tutorials</a>
+      </div>
+    </div>
+</div><div id="content">
+  <div id="contentbody">
+    <div id="contentbodychild">
+      <div class="ad_mobile">
+        <script async="" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(9).txt"></script>
+<!-- DevPHP Responsive 1 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2379004690904460" data-ad-slot="5070281336" data-ad-format="auto" data-adsbygoogle-status="done"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>      </div>
+      <!-- <div class="ad_leaderboard">
+              </div> -->
+      <div id="videobox">
+        <iframe src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/IxpAOmvawyw.html" allowfullscreen=""></iframe>
+      </div>
+            <h2>Crop Thumbnail Image Function Tutorial jpg gif png</h2>
+      <div id="db_body">
+	    <aside id="ad_160x600">
+          <script async="" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(9).txt"></script>
+<!-- WOW 160x600 Skyscraper -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2379004690904460" data-ad-slot="8215767516" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:160px;height:600px;" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>        </aside>
+		<div>Learn how to script a universal PHP image crop function that runs inline with our resize function created in the previous lesson. It uses a handful of functions from the GD library in PHP. In our example the function will work for cropping JPG, GIF, and PNG type of images universally.
+
+<b>my_file.php</b>
+<code><span class="code-elem">&lt;form enctype=<span class="code-str">"multipart/form-data"</span> method=<span class="code-str">"post"</span> action=<span class="code-str">"image_upload_script.php"</span>&gt;</span>
+Choose your file here:
+<span class="code-elem">&lt;input name=<span class="code-str">"uploaded_file"</span> type=<span class="code-str">"file"</span>/&gt;</span><span class="code-elem">&lt;br /&gt;</span><span class="code-elem">&lt;br /&gt;</span>
+<span class="code-elem">&lt;input type=<span class="code-str">"submit"</span> value=<span class="code-str">"Upload It"</span>/&gt;</span>
+<span class="code-elem">&lt;/form&gt;</span></code>
+
+<b>image_upload_script.php</b>
+<code><span class="code-phptags">&lt;?php</span>
+<span class="code-comment">// Access the $_FILES global variable for this specific file being uploaded<br></span><span class="code-comment">// and create local PHP variables from the $_FILES array of information<br></span>$fileName = $_FILES[<span class="code-str">"uploaded_file"</span>][<span class="code-str">"name"</span>]; <span class="code-comment">// The file name<br></span>$fileTmpLoc = $_FILES[<span class="code-str">"uploaded_file"</span>][<span class="code-str">"tmp_name"</span>]; <span class="code-comment">// File in the PHP tmp folder<br></span>$fileType = $_FILES[<span class="code-str">"uploaded_file"</span>][<span class="code-str">"type"</span>]; <span class="code-comment">// The type of file it is<br></span>$fileSize = $_FILES[<span class="code-str">"uploaded_file"</span>][<span class="code-str">"size"</span>]; <span class="code-comment">// File size in bytes<br></span>$fileErrorMsg = $_FILES[<span class="code-str">"uploaded_file"</span>][<span class="code-str">"error"</span>]; <span class="code-comment">// 0 for false... and 1 for true<br></span>$kaboom = explode(<span class="code-str">"."</span>, $fileName); <span class="code-comment">// Split file name into an array using the dot<br></span>$fileExt = end($kaboom); <span class="code-comment">// Now target the last array element to get the file extension<br></span><span class="code-comment">// START PHP Image Upload Error Handling --------------------------------------------------<br></span>if (!$fileTmpLoc) { <span class="code-comment">// if file not chosen<br></span>    echo <span class="code-str">"ERROR: Please browse for a file before clicking the upload button."</span>;
+    exit();
+} else if($fileSize &gt; 5242880) { <span class="code-comment">// if file size is larger than 5 Megabytes<br></span>    echo <span class="code-str">"ERROR: Your file was larger than 5 Megabytes in size."</span>;
+    unlink($fileTmpLoc); <span class="code-comment">// Remove the uploaded file from the PHP temp folder<br></span>    exit();
+} else if (!preg_match(<span class="code-str">"/.(gif|jpg|png)$/i"</span>, $fileName) ) {
+     <span class="code-comment">// This condition is only if you wish to allow uploading of specific file types    <br></span>     echo <span class="code-str">"ERROR: Your image was not .gif, .jpg, or .png."</span>;
+     unlink($fileTmpLoc); <span class="code-comment">// Remove the uploaded file from the PHP temp folder<br></span>     exit();
+} else if ($fileErrorMsg == 1) { <span class="code-comment">// if file upload error key is equal to 1<br></span>    echo <span class="code-str">"ERROR: An error occured while processing the file. Try again."</span>;
+    exit();
+}
+<span class="code-comment">// END PHP Image Upload Error Handling ---------------------------------<br></span><span class="code-comment">// Place it into your <span class="code-str">"uploads"</span> folder mow using the move_uploaded_file() <b>function</b><br></span>$moveResult = move_uploaded_file($fileTmpLoc, <span class="code-str">"uploads/$fileName"</span>);
+<span class="code-comment">// Check to make sure the move result is true before continuing<br></span>if ($moveResult != true) {
+    echo <span class="code-str">"ERROR: File not uploaded. Try again."</span>;
+    unlink($fileTmpLoc); <span class="code-comment">// Remove the uploaded file from the PHP temp folder<br></span>    exit();
+}
+unlink($fileTmpLoc); <span class="code-comment">// Remove the uploaded file from the PHP temp folder<br></span><span class="code-comment">// ---------- Include Adams Universal Image Resizing Function --------<br></span>include_once(<span class="code-str">"ak_php_img_lib_1.0.php"</span>);
+$target_file = <span class="code-str">"uploads/$fileName"</span>;
+$resized_file = <span class="code-str">"uploads/resized_$fileName"</span>;
+$wmax = 300;
+$hmax = 300;
+ak_img_resize($target_file, $resized_file, $wmax, $hmax, $fileExt);
+<span class="code-comment">// ----------- End Adams Universal Image Resizing Function ----------<br></span><span class="code-comment">// ------ Start Adams Universal Image Thumbnail(Crop) Function ------<br></span>$target_file = <span class="code-str">"uploads/resized_$fileName"</span>;
+$thumbnail = <span class="code-str">"uploads/thumb_$fileName"</span>;
+$wthumb = 150;
+$hthumb = 150;
+ak_img_thumb($target_file, $thumbnail, $wthumb, $hthumb, $fileExt);
+<span class="code-comment">// ------- End Adams Universal Image Thumbnail(Crop) Function -------<br></span><span class="code-comment">// Display things to the page so you can see what is happening for testing purposes<br></span>echo <span class="code-str">"The file named <span class="code-elem">&lt;strong&gt;</span>$fileName<span class="code-elem">&lt;/strong&gt;</span> uploaded successfuly.<span class="code-elem">&lt;br /&gt;</span><span class="code-elem">&lt;br /&gt;</span>"</span>;
+echo <span class="code-str">"It is <span class="code-elem">&lt;strong&gt;</span>$fileSize<span class="code-elem">&lt;/strong&gt;</span> bytes in size.<span class="code-elem">&lt;br /&gt;</span><span class="code-elem">&lt;br /&gt;</span>"</span>;
+echo <span class="code-str">"It is an <span class="code-elem">&lt;strong&gt;</span>$fileType<span class="code-elem">&lt;/strong&gt;</span> type of file.<span class="code-elem">&lt;br /&gt;</span><span class="code-elem">&lt;br /&gt;</span>"</span>;
+echo <span class="code-str">"The file extension is <span class="code-elem">&lt;strong&gt;</span>$fileExt<span class="code-elem">&lt;/strong&gt;</span><span class="code-elem">&lt;br /&gt;</span><span class="code-elem">&lt;br /&gt;</span>"</span>;
+echo <span class="code-str">"The Error Message output for this upload is: $fileErrorMsg"</span>;
+<span class="code-phptags">?&gt;</span></code>
+
+<b>ak_php_img_lib_1.0.php</b>
+<code><span class="code-phptags">&lt;?php</span>
+<span class="code-comment">// -------------- RESIZE FUNCTION -------------<br></span><span class="code-comment">// Function for resizing any jpg, gif, or png image files<br></span><b>function</b> ak_img_resize($target, $newcopy, $w, $h, $ext) {
+    list($w_orig, $h_orig) = getimagesize($target);
+    $scale_ratio = $w_orig / $h_orig;
+    if (($w / $h) &gt; $scale_ratio) {
+           $w = $h * $scale_ratio;
+    } else {
+           $h = $w / $scale_ratio;
+    }
+    $img = <span class="code-str">""</span>;
+    $ext = strtolower($ext);
+    if ($ext == <span class="code-str">"gif"</span>){ 
+    $img = imagecreatefromgif($target);
+    } else if($ext ==<span class="code-str">"png"</span>){ 
+    $img = imagecreatefrompng($target);
+    } else { 
+    $img = imagecreatefromjpeg($target);
+    }
+    $tci = imagecreatetruecolor($w, $h);
+    <span class="code-comment">// imagecopyresampled(dst_img, src_img, dst_x, dst_y, src_x, src_y, dst_w, dst_h, src_w, src_h)<br></span>    imagecopyresampled($tci, $img, 0, 0, 0, 0, $w, $h, $w_orig, $h_orig);
+    if ($ext == <span class="code-str">"gif"</span>){ 
+        imagegif($tci, $newcopy);
+    } else if($ext ==<span class="code-str">"png"</span>){ 
+        imagepng($tci, $newcopy);
+    } else { 
+        imagejpeg($tci, $newcopy, 84);
+    }
+}
+<span class="code-comment">// ------------- THUMBNAIL (CROP) FUNCTION -------------<br></span><span class="code-comment">// Function for creating a true thumbnail cropping from any jpg, gif, or png image files<br></span><b>function</b> ak_img_thumb($target, $newcopy, $w, $h, $ext) {
+    list($w_orig, $h_orig) = getimagesize($target);
+    $src_x = ($w_orig / 2) - ($w / 2);
+    $src_y = ($h_orig / 2) - ($h / 2);
+    $ext = strtolower($ext);
+    $img = <span class="code-str">""</span>;
+    if ($ext == <span class="code-str">"gif"</span>){ 
+    $img = imagecreatefromgif($target);
+    } else if($ext ==<span class="code-str">"png"</span>){ 
+    $img = imagecreatefrompng($target);
+    } else { 
+    $img = imagecreatefromjpeg($target);
+    }
+    $tci = imagecreatetruecolor($w, $h);
+    imagecopyresampled($tci, $img, 0, 0, $src_x, $src_y, $w, $h, $w, $h);
+    if ($ext == <span class="code-str">"gif"</span>){ 
+        imagegif($tci, $newcopy);
+    } else if($ext ==<span class="code-str">"png"</span>){ 
+        imagepng($tci, $newcopy);
+    } else { 
+        imagejpeg($tci, $newcopy, 84);
+    }
+}
+<span class="code-phptags">?&gt;</span></code></div>
+      </div>
+            <div class="ad_mobile" style="margin-top:25px;">
+        <script async="" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(9).txt"></script>
+<!-- DevPHP Responsive 1 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2379004690904460" data-ad-slot="5070281336" data-ad-format="auto" data-adsbygoogle-status="done"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>      </div>
+      <div class="ad_leaderboard">
+        <script async="" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/f(9).txt"></script>
+<!-- 728x90 -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2379004690904460" data-ad-slot="5685507840" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>      </div>
+      <img id="vid_thumb" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/mqdefault.jpg" alt="thumb">
+    </div>
+  </div>
+  <div id="rel_tuts">
+    <div>
+      <h3><a href="http://www.developphp.com/video/PHP">PHP Videos</a></h3>
+      <h4>Image Processing</h4>
+	  <a href="http://www.developphp.com/video/PHP/Introduction-to-PHP-Image-Processing" title="Introduction to PHP Image Processing">Introduction to PHP Image Processing</a><a href="http://www.developphp.com/video/PHP/Image-Processing-Libraries" title="Image Processing Libraries">Image Processing Libraries</a><a href="http://www.developphp.com/video/PHP/Check-GD-Library-Version-and-Test-Copy-Image-Rotate" title="Check GD Library Version and Test Copy Image Rotate">Check GD Library Version and Test Copy Image Rotate</a><a href="http://www.developphp.com/video/PHP/Build-an-Image-Upload-Application-to-Enable-Working-With-Images-On-the-Fly" title="Build an Image Upload Application to Enable Working With Images On the Fly">Build an Image Upload Application to Enable Working With Images On the Fly</a><a href="http://www.developphp.com/video/PHP/Image-Resize-Function-Tutorial-jpg-gif-png-Change-Size" title="Image Resize Function Tutorial jpg gif png Change Size">Image Resize Function Tutorial jpg gif png Change Size</a><span>Crop Thumbnail Image Function Tutorial jpg gif png</span><a href="http://www.developphp.com/video/PHP/Image-Filter-Name-Rename-Upload-Tutorial" title="Image Filter Name Rename Upload Tutorial">Image Filter Name Rename Upload Tutorial</a><a href="http://www.developphp.com/video/PHP/Image-Convert-Type-Function-Upload-Tutorial" title="Image Convert Type Function Upload Tutorial">Image Convert Type Function Upload Tutorial</a><a href="http://www.developphp.com/video/PHP/Image-Watermark-Function-How-To-Add-On-the-Fly-Tutorial" title="Image Watermark Function How To Add On the Fly Tutorial">Image Watermark Function How To Add On the Fly Tutorial</a>    </div>
+  </div>
+  <script>
+  if(_("rel_tuts").scrollHeight > _("contentbodychild").scrollHeight){
+	  _("contentbodychild").style.height = _("rel_tuts").scrollHeight+"px";
+  }
+  </script>
+  <div id="social">
+    <button onclick="window.open(&#39;http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.developphp.com%2Fvideo%2FPHP%2FCrop-Thumbnail-Image-Function-Tutorial-jpg-gif-png&#39;,&#39;sharer&#39;,&#39;toolbar=0,status=0,width=580,height=400&#39;);" title="Share on Facebook"></button><button onclick="window.open(&#39;http://plus.google.com/share?url=https%3A%2F%2Fwww.developphp.com%2Fvideo%2FPHP%2FCrop-Thumbnail-Image-Function-Tutorial-jpg-gif-png&#39;,&#39;share&#39;,&#39;toolbar=0,status=0,width=550,height=450&#39;);" title="Share on Google Plus"></button><button onclick="window.open(&#39;http://www.twitter.com/intent/tweet?url=https%3A%2F%2Fwww.developphp.com%2Fvideo%2FPHP%2FCrop-Thumbnail-Image-Function-Tutorial-jpg-gif-png&amp;text=PHP - Crop Thumbnail Image Function Tutorial jpg gif png&#39;,&#39;tweety&#39;,&#39;toolbar=0,status=0,width=550,height=450&#39;);" title="Tweet this"></button><button onclick="window.location=&#39;mailto:?subject=PHP - Crop Thumbnail Image Function Tutorial jpg gif png&amp;body=Hi, I thought you might like to see this: %0D%0Ahttps://www.developphp.com/video/PHP/Crop-Thumbnail-Image-Function-Tutorial-jpg-gif-png&#39;;" title="Send this to an email contact"></button>
+    
+  </div>
+</div>
+<div id="foot">
+  <div id="foot_rule"></div>
+  <div id="foot_copy">
+    © 2019 All Rights Reserved
+  </div>
+  <div id="foot_links">
+    <a href="https://www.developphp.com/">Home</a> •
+    <a href="http://www.developphp.com/Table-of-Contents">Table of Contents</a> •
+    <a href="http://www.developphp.com/donate.php">Donate / Support</a> •
+    <a href="http://www.developphp.com/terms_of_use.php">Terms of Use</a>
+  </div>
+  <fieldset id="affiliation"><legend>Partner Services</legend><b>☁</b><a href="http://www.developphp.com/hosting.php">Hosting Solutions</a></fieldset>
+</div>
+<button id="scrolltopbtn" onclick="resetScroller()" style="display: block;">🔝</button>
+<iframe id="google_osd_static_frame_4880382985107" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/saved_resource(2).html"></iframe></body><iframe id="google_shimpl" style="display: none;" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/saved_resource(3).html"></iframe><iframe id="google_esf" name="google_esf" src="./PHP Crop Thumbnail Image Function Tutorial jpg gif png_files/zrt_lookup.html" data-ad-client="ca-pub-2379004690904460" style="display: none;"></iframe></html>

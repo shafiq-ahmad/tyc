@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Set Up Your Client - PayPal Developer_files/21a0949ecd20c57a834ab43dfcfecbc9.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/742b1f7c20fad47d5a440466f1265000.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/9289c3f9d45c0f1573b7c014c5cf00f1.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/c2164aeca6d61a6f201bea7bcf3f8381.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/fab8ea4e652a6548d13317c8f4b8bd78.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/dd6797289466fcafceda54ba0fd683a6.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/8e18c6ffc5e6a03029d40e13cdd779eb.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/da7d37c8ad91658f7952344d65561895.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/bcb41607f75ea330dedec9a4085353b5.js.download" crossorigin="anonymous"></script><script src="./Set Up Your Client - PayPal Developer_files/8c024cb0043360c0a183ef86569e5a97.js.download" crossorigin="anonymous"></script>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        
+
+        <title>Set Up Your Client - PayPal Developer</title>
+
+        <meta robots="noindex">
+
+        
+        
+        <meta name="ean" id="meta-ean" content="RLV3CQ762ZUCU">
+        <meta name="user-guid" content="16c7d4a316bac1200012504ffffd02bd">
+        <meta name="google-site-verification" content="5TSpPYugZFh4ZIPtVNTcBqDp3sSzaLnmoh2nqmxilNA">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+
+        <link rel="icon" sizes="32x32" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp32.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp152.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp114.png">
+        <link rel="apple-touch-icon-precomposed" href="https://www.paypalobjects.com/webstatic/developer/favicons/pp57.png">
+
+        <link rel="stylesheet" type="text/css" href="./Set Up Your Client - PayPal Developer_files/docs.css">
+
+        
+            
+        
+
+        
+        
+
+        
+        
+    <script type="text/javascript" async="" crossorigin="anonymous" src="./Set Up Your Client - PayPal Developer_files/802b93f0fe41b41869a2e449e704709d.js.download"></script><script async="" src="./Set Up Your Client - PayPal Developer_files/analytics.js.download"></script><script async="" src="./Set Up Your Client - PayPal Developer_files/bootstrap.js.download"></script><script data-main="/js/layouts/braintree/guide" src="./Set Up Your Client - PayPal Developer_files/require.js.download"></script>
+
+        
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="guide" src="./Set Up Your Client - PayPal Developer_files/guide.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsCookie" src="./Set Up Your Client - PayPal Developer_files/js.cookie.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="master" src="./Set Up Your Client - PayPal Developer_files/master.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Set Up Your Client - PayPal Developer_files/jquery.min.js.download"></script><style id="inert-style">
+[inert] {
+  pointer-events: none;
+  cursor: default;
+}
+
+[inert], [inert] * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</style></head>
+
+    <body class="dx-docs dx-braintree" cz-shortcut-listen="true">
+        <header class="header vx_globalNav-main" id="header">
+            <a class="header__block header__brand" href="https://developer.paypal.com/" aria-label="PayPal Developer" pa-marked="1"></a>
+            <a class="header__block dx-trigger-nav-0" data-trigger-nav="dx-nav-open-0" aria-label="Toggle top-level navigation" pa-marked="1"></a>
+            <div class="dx-trigger-nav-2" data-trigger-nav="dx-nav-open-2" data-product="">Express Checkout - Braintree SDK</div>
+
+            <div class="header__nav">
+                <div class="header__nav--left">
+                    <ul class="dx-nav-0 dx-nav-0-docs">
+                        <li class="dx-nav-0-item dx-nav-active">
+                            <a class="dx-nav-0-link" href="https://developer.paypal.com/docs/" pa-marked="1">Docs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/checkout/" pa-marked="1">Checkout</a>
+                                    <span class="dx-nav-0-desc">Add checkout buttons to your page and more</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/partners/" pa-marked="1">PayPal Commerce Platform</a>
+                                    <span class="dx-nav-0-desc">Add an end-to-end payment solution</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/subscriptions" pa-marked="1">Subscriptions</a>
+                                    <span class="dx-nav-0-desc">Add recurring billing as a payment option</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/payouts/" pa-marked="1">Payouts</a>
+                                    <span class="dx-nav-0-desc">Send money to many recipients at the same time</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/invoicing/" pa-marked="1">Invoicing</a>
+                                    <span class="dx-nav-0-desc">Set up invoicing in your order management system</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/" pa-marked="1">View All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="https://developer.paypal.com/docs/api/" pa-marked="1">APIs</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/api/overview" pa-marked="1">REST APIs</a>
+                                    <span class="dx-nav-0-desc">PayPal’s current HTTP-based RESTful APIs</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/apex/home/" target="_blank" pa-marked="1">API Explorer</a>
+                                    <span class="dx-nav-0-desc">Try our interactive tool and explore PayPal REST API capabilities</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dx-nav-0-item ">
+                            <a class="dx-nav-0-link" href="https://developer.paypal.com/support/" pa-marked="1">Support</a>
+                            <ul class="dx-nav-0-sub">
+                                <li class="dx-nav-0-sub-item dx-nav-0-sub-index">
+                                    <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/support/" pa-marked="1">Support Overview</a>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal.com/us/smarthelp/personal/search?q=Search.....&amp;channel=mts" pa-marked="1">FAQ</a>
+                                    <span class="dx-nav-0-desc">Search our FAQ site</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-community.com/mts" pa-marked="1">Technical Support Community</a>
+                                    <span class="dx-nav-0-desc">Raise technical and integration questions with our engineers and others</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                    <a class="dx-nav-0-sub-link" href="https://www.paypal-support.com/" pa-marked="1">Report a Bug or Integration Issue</a>
+                                    <span class="dx-nav-0-desc">Open a ticket to report a bug or ask for integration help</span>
+                                </li>
+                                <li class="dx-nav-0-sub-item">
+                                  <a class="dx-nav-0-sub-link" href="https://developer.paypal.com/docs/contact-sales/" pa-marked="1">Contact Sales</a>
+                                  <span class="dx-nav-0-desc">Get help setting up your account and accessing integration resources</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="header__search dx-form-search" id="siteSearch" name="search" action="https://developer.paypal.com/search" method="get">
+                        <label class="sr-only" for="siteQ">Enter search term</label>
+                        <input class="dx-search-input" placeholder="Search">
+                    </form>
+                </div>
+
+                <div class="header__nav--right">
+                    <div class="dx-auth-block dx-authed profile__container">
+                        
+                        <div tabindex="0" class="dx-auth dx-auth-logged-in profile__wrap">
+                            <div id="dx-profile-dropdown-btn" class="profile__trigger">
+                                <div class="profile__letter--wrap dx-bg-grad-radial-blue">
+                                    <span class="profile__letter">S</span>
+                                </div>
+                                <div class="profile__name">Shafique</div>
+                            </div>
+                            <div id="dx-profile-dropdown" class="profile__dropdown">
+                                <ul class="profile__dropdown__list">
+                                    <li class="profile__dropdown__item">
+                                        <a class="dx-home-content profile__dropdown__link profile__dropdown__link--dashboard" data-enable-spinner="/developer/applications/" href="https://developer.paypal.com/developer/applications/" pa-marked="1">Dashboard</a>
+                                    </li>
+                                    <li class="profile__dropdown__item">
+                                        <a class="profile__dropdown__link profile__dropdown__link--my-account" data-enable-spinner="/developer/accountStatus/" href="https://developer.paypal.com/developer/accountStatus/" pa-marked="1">My Account</a>
+                                    </li>
+                                    <li class="profile__dropdown__item">
+                                        <a class="dx-auth-logout profile__dropdown__link profile__dropdown__link--logout" data-js="auth-btn" href="https://www.paypal.com/signout?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdocs%2Faccept-payments%2Fexpress-checkout%2Fec-braintree-sdk%2Fclient-side%2Fjavascript%2Fv3%2F" data-bypass="true" pa-marked="1">Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div id="dx-auth-info" hidden="" data-login-url="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications" data-logout-url="https://www.paypal.com/signout?returnUri=PAGEURL">
+                    </div>
+                </div>
+            </div>
+        </div></header>
+
+        <main class="dx-main vx_foreground-container">
+            
+            
+                
+                
+                    <div class="dx-flex">
+                        
+    <div class="dx-main-nav-slug"></div>
+    <div class="dx-main-nav dx-mobile-nav">
+        <nav class="tip-nav">
+        
+            <ul><li class="tip-nav-active-parent"><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/" pa-marked="1">Express Checkout - Braintree SDK</a><ul><li><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/get-started/" pa-marked="1">Get Started</a></li><li class="tip-nav-active-parent"><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/" pa-marked="1">Set Up Your Client</a><ul><li><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/android/v2/" pa-marked="1">Android</a></li><li><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/ios/v4/" pa-marked="1">iOS</a></li><li class="tip-nav-active"><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/" pa-marked="1">Javascript</a></li></ul></li><li><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/" pa-marked="1">Set Up Your Server</a><ul></ul></li><li><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/testing-go-live/" pa-marked="1">Testing and Go Live</a><ul></ul></li></ul></li></ul>
+        
+        </nav>
+    </div>
+
+                        <article class="content dx-content ">
+                            
+    <span class="label u-mobile-hide"></span>
+    <h1>Set Up Your Client</h1>
+
+    
+        <div class="dx-sdk-picker-container">
+            <h4 class="dx-sdk-picker-title" id="sdk-picker-title">Choose an SDK preference:</h4>
+
+            <div class="picker" role="group" aria-labelledby="sdk-picker-title" platform="client">
+                
+                    
+                        <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/android/v2/" data-title="Android" data-value="android/v2" class="picker__btn" pa-marked="1">Android</a>
+                    
+                        <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/ios/v4/" data-title="iOS" data-value="ios/v4" class="picker__btn" pa-marked="1">iOS</a>
+                    
+                        <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/" data-title="JavaScript" data-value="javascript/v3" class="picker__btn picker__btn--active" pa-marked="1">JavaScript</a>
+                    
+                
+                
+            </div>
+        </div>
+    
+
+    
+
+
+<article>
+      <p class="markdown-p">Braintree's JavaScript SDK lets you easily accept payments from PayPal. The SDK is made up of several components, so you only need to pull in the files you require.</p>
+<h2 class="markdown-h2">
+  Loading the SDK
+  
+  <a class="hash-link-target" id="loading-the-sdk" pa-marked="1"></a>
+</h2>
+<p class="markdown-p">The JavaScript SDK is split into a number of components. You can load these components directly from our servers:</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=html">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-0"><code class="snippet__code html hljs xml"><span class="hljs-comment">&lt;!-- Load the required checkout.js script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/api/checkout.js"</span> <span class="hljs-attr">data-version-4</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Load the required Braintree components. --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://js.braintreegateway.com/web/3.39.0/js/client.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://js.braintreegateway.com/web/3.39.0/js/paypal-checkout.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: braintree,
+  <span class="hljs-comment">// Other configuration</span>
+}, <span class="hljs-string">'#id-of-element-where-paypal-button-will-render'</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-0" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-0" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<h3 class="markdown-h3">
+  Other ways to install
+  
+  <a class="hash-link-target" id="other-ways-to-install" pa-marked="1"></a>
+</h3>
+<p class="markdown-p">We also publish these packages in a few other ways.</p>
+<h4 class="markdown-h4">
+  npm
+  
+  <a class="hash-link-target" id="npm" pa-marked="1"></a>
+</h4>
+<p class="markdown-p">We ship an <a class="is-external-link dx-external-link" target="_blank" href="https://www.npmjs.com/package/braintree-web" title="external link" rel="noopener noreferrer" pa-marked="1">npm package<!-- start exclude from search --><!-- end exclude from search --></a> to be used with tools like <a class="is-external-link dx-external-link" target="_blank" href="http://browserify.org/" title="external link" rel="noopener noreferrer" pa-marked="1">Browserify<!-- start exclude from search --><!-- end exclude from search --></a> or <a class="is-external-link dx-external-link" target="_blank" href="http://webpack.github.io/" title="external link" rel="noopener noreferrer" pa-marked="1">Webpack<!-- start exclude from search --><!-- end exclude from search --></a>. Install it as you would any other npm package:</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=bash">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-1"><code class="snippet__code bash hljs">npm install --save braintree-web</code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-1" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-1" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<p class="markdown-p">You can then include each component as needed.</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=javascript">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-2"><code class="snippet__code javascript hljs"><span class="hljs-keyword">var</span> paypal = <span class="hljs-built_in">require</span>(<span class="hljs-string">'paypal-checkout'</span>);
+<span class="hljs-keyword">var</span> client = <span class="hljs-built_in">require</span>(<span class="hljs-string">'braintree-web/client'</span>);
+<span class="hljs-keyword">var</span> paypalCheckout = <span class="hljs-built_in">require</span>(<span class="hljs-string">'braintree-web/paypal-checkout'</span>);
+
+paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: {
+    <span class="hljs-attr">client</span>: client,
+    <span class="hljs-attr">paypalCheckout</span>: paypalCheckout
+  },
+  <span class="hljs-comment">// The rest of your configuration</span>
+}, <span class="hljs-string">'#id-of-element-where-paypal-button-will-render'</span>);</code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-2" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-2" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<h4 class="markdown-h4">
+  <a class="is-external-link dx-external-link" target="_blank" href="http://bower.io/" title="external link" rel="noopener noreferrer" pa-marked="1">Bower<!-- start exclude from search --><!-- end exclude from search --></a>
+  
+  <a class="hash-link-target" id="bower" pa-marked="1"></a>
+</h4>
+<p class="markdown-p">We also publish the SDK to Bower. Install it like any other package:</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=bash">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-3"><code class="snippet__code bash hljs">bower install --save braintree-web<span class="hljs-comment">#3.39.0</span></code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-3" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-3" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<p class="markdown-p">And load the required components:</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=html">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-4"><code class="snippet__code html hljs xml"><span class="hljs-comment">&lt;!-- Load the required checkout.js script --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/api/checkout.js"</span> <span class="hljs-attr">data-version-4</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Load the required components. --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/bower_components/braintree-web/client.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/bower_components/braintree-web/paypal-checkout.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: braintree,
+  <span class="hljs-comment">// Other configuration</span>
+}, <span class="hljs-string">'#id-of-element-where-paypal-button-will-render'</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-4" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-4" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<h4 class="markdown-h4">
+  AMD (using Require.js)
+  
+  <a class="hash-link-target" id="amd-(using-require.js)" pa-marked="1"></a>
+</h4>
+<p class="markdown-p">You can also use the JavaScript SDK with AMD just like any other library.</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=html">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-5"><code class="snippet__code html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">data-main</span>=<span class="hljs-string">"main.js"</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.1/require.min.js"</span>
+&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-5" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-5" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<p class="markdown-p">You can require only the components that you need, which can reduce the file size of your code.</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=javascript">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-6"><code class="snippet__code javascript hljs"><span class="hljs-comment">// Inside main.js:</span>
+<span class="hljs-built_in">require</span>.config({
+  <span class="hljs-attr">paths</span>: {
+    <span class="hljs-attr">paypal</span>: <span class="hljs-string">'https://www.paypalobjects.com/api/checkout.js'</span>,
+    <span class="hljs-attr">braintreeClient</span>: <span class="hljs-string">'https://js.braintreegateway.com/web/3.39.0/js/client.min'</span>,
+    <span class="hljs-attr">braintreePaypal</span>: <span class="hljs-string">'https://js.braintreegateway.com/web/3.39.0/js/paypal-checkout.min'</span>
+  }
+});
+
+<span class="hljs-built_in">require</span>([<span class="hljs-string">'paypal'</span>, <span class="hljs-string">'braintreeClient'</span>, <span class="hljs-string">'braintreePaypal'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">paypal, client, paypalCheckout</span>) </span>{
+paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: {
+    <span class="hljs-attr">client</span>: client,
+    <span class="hljs-attr">paypalCheckout</span>: paypalCheckout
+  },
+  <span class="hljs-comment">// Other configuration</span>
+}, <span class="hljs-string">'#id-of-element-where-paypal-button-will-render'</span>);</code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-6" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-6" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<p class="markdown-p">Once you have access to the <code class="syntax-inline syntax-inline--theme">braintree</code> namespace, you can initialize your integration.</p>
+<h2 class="markdown-h2">
+  Get a client token
+  
+  <a class="hash-link-target" id="get-a-client-token" pa-marked="1"></a>
+</h2>
+<p class="markdown-p">To start up, the JavaScript SDK needs a client token generated by the server SDK. To see how to generate one, follow <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/ruby" pa-marked="1">Set Up Your Server</a> (the next page) until you've completed the <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/ruby#generate-a-client-token" pa-marked="1">Generate a client token</a> section.</p>
+<p class="markdown-p">Once you've generated a client token, embed it into your template. There are a number of ways to get your client token into JavaScript so you can set up Braintree. Many people choose to interpolate the client token into the HTML/JavaScript itself; alternatively, you could load the client token from an AJAX call to an <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/ruby#send-a-client-token-to-your-client" pa-marked="1">exposed client token URL on your server</a>.</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=javascript">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-7"><code class="snippet__code javascript hljs">paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: braintree,
+  <span class="hljs-attr">client</span>: {
+    <span class="hljs-attr">production</span>: <span class="hljs-string">'CLIENT_TOKEN_FROM_SERVER'</span>,
+    <span class="hljs-attr">sandbox</span>: <span class="hljs-string">'CLIENT_TOKEN_FROM_SERVER'</span>
+  },
+  <span class="hljs-attr">env</span>: <span class="hljs-string">'production'</span>, <span class="hljs-comment">// or 'sandbox'</span>
+  <span class="hljs-comment">// The rest of your setup, we'll go into more detail about this later on</span></code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-7" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-7" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<h2 class="markdown-h2">
+  PayPal configuration
+  
+  <a class="hash-link-target" id="paypal-configuration" pa-marked="1"></a>
+</h2>
+<h3 class="markdown-h3">
+  Invoking Express Checkout
+  
+  <a class="hash-link-target" id="invoking-express-checkout" pa-marked="1"></a>
+</h3>
+<div class="message message--note"><span class="message__title message__title--note">note</span><p class="markdown-p">The examples on this page now use the <a href="http://braintree.github.io/braintree-web/current/module-braintree-web_paypal-checkout.html" class="dx-external-link" title="external link" target="_blank" rel="noopener noreferrer" pa-marked="1">PayPal Checkout component</a> released in version 3.7.0 of the Braintree JavaScript SDK. Documentation and examples for the deprecated PayPal component are available in the <a href="http://braintree.github.io/braintree-web/current/module-braintree-web_paypal.html" class="dx-external-link" title="external link" target="_blank" rel="noopener noreferrer" pa-marked="1">JavaScript reference</a>.</p>
+</div>
+
+<p class="markdown-p">To request a one-time payment, set <code class="syntax-inline syntax-inline--theme">flow</code> to <code class="syntax-inline syntax-inline--theme">'checkout'</code>. You must also include <code class="syntax-inline syntax-inline--theme">amount</code> and <code class="syntax-inline syntax-inline--theme">currency</code> options.</p>
+<div class="hit__gradient-container">
+  <div class="snippet" data-track-event-properties="action=click,type=snippet_language,descriptor=snippet_language,language=javascript">
+     <!-- close language-id for copyable snippet -->
+      <pre class="snippet__pre dx-pre-hljs" id="c2cb-target-8"><code class="snippet__code javascript hljs"><span class="hljs-comment">// Be sure to have PayPal's checkout.js library and the Braintree client and PayPal checkout scripts loaded on your page.</span>
+<span class="hljs-comment">// &lt;script src="https://www.paypalobjects.com/api/checkout.js" data-version-4&gt;&lt;/script&gt;</span>
+<span class="hljs-comment">// &lt;script src="https://js.braintreegateway.com/web/3.39.0/js/client.min.js"&gt;&lt;/script&gt;</span>
+<span class="hljs-comment">// &lt;script src="https://js.braintreegateway.com/web/3.39.0/js/paypal-checkout.min.js"&gt;&lt;/script&gt;</span>
+
+paypal.Button.render({
+  <span class="hljs-attr">braintree</span>: braintree,
+  <span class="hljs-attr">client</span>: {
+    <span class="hljs-attr">production</span>: <span class="hljs-string">'CLIENT_TOKEN_FROM_SERVER'</span>,
+    <span class="hljs-attr">sandbox</span>: <span class="hljs-string">'CLIENT_TOKEN_FROM_SERVER'</span>
+  },
+  <span class="hljs-attr">env</span>: <span class="hljs-string">'production'</span>, <span class="hljs-comment">// Or 'sandbox'</span>
+  commit: <span class="hljs-literal">true</span>, <span class="hljs-comment">// This will add the transaction amount to the PayPal button</span>
+
+  payment: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, actions</span>) </span>{
+    <span class="hljs-keyword">return</span> actions.braintree.create({
+      <span class="hljs-attr">flow</span>: <span class="hljs-string">'checkout'</span>, <span class="hljs-comment">// Required</span>
+      amount: <span class="hljs-number">10.00</span>, <span class="hljs-comment">// Required</span>
+      currency: <span class="hljs-string">'USD'</span>, <span class="hljs-comment">// Required</span>
+      enableShippingAddress: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">shippingAddressEditable</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">shippingAddressOverride</span>: {
+        <span class="hljs-attr">recipientName</span>: <span class="hljs-string">'Scruff McGruff'</span>,
+        <span class="hljs-attr">line1</span>: <span class="hljs-string">'1234 Main St.'</span>,
+        <span class="hljs-attr">line2</span>: <span class="hljs-string">'Unit 1'</span>,
+        <span class="hljs-attr">city</span>: <span class="hljs-string">'Chicago'</span>,
+        <span class="hljs-attr">countryCode</span>: <span class="hljs-string">'US'</span>,
+        <span class="hljs-attr">postalCode</span>: <span class="hljs-string">'60652'</span>,
+        <span class="hljs-attr">state</span>: <span class="hljs-string">'IL'</span>,
+        <span class="hljs-attr">phone</span>: <span class="hljs-string">'123.456.7890'</span>
+      }
+    });
+  },
+
+  <span class="hljs-attr">onAuthorize</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">payload</span>) </span>{
+    <span class="hljs-comment">// Submit `payload.nonce` to your server.</span>
+  },
+}, <span class="hljs-string">'#paypal-button'</span>);</code><div class="dx-pre-meta"><button class="dx-btn dx-btn-copy" data-c2cb-target="c2cb-target-8" data-dxa="sampleCode,copyToClipboard,/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/|c2cb-target-8" pa-marked="1">copy</button></div></pre>
+    
+  </div> <!-- close snippet -->
+
+  <div class="hit__gradient"></div>
+</div>
+<h3 class="markdown-h3">
+  Supported currencies
+  
+  <a class="hash-link-target" id="supported-currencies" pa-marked="1"></a>
+</h3>
+<p class="markdown-p">The <code class="syntax-inline syntax-inline--theme">currency</code> field determines the currency of the transaction displayed to the customer in the Express Checkout flow. You'll pass the same currency with the transaction request on the <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/ruby#specify-currency" pa-marked="1">server side</a>.</p>
+<div class="message message--note"><span class="message__title message__title--note">note</span><p class="markdown-p">When you first create your PayPal business account, you'll be able to pass only the default currency for the country associated with your business account. If you'd like to display transactions in additional currencies, see the <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/#multi-currency-setup" class="dx-external-link" pa-marked="1">multi-currency setup</a> section below.</p>
+</div>
+
+<p class="markdown-p"><a class="is-external-link" target="_blank" href="https://developer.paypal.com/docs/integration/direct/rest-api-payment-country-currency-support/#paypal-account-payments" pa-marked="1">See the full list of supported currencies for Express Checkout.<!-- start exclude from search --><!-- end exclude from search --></a></p>
+<h4 class="markdown-h4">
+  Multi-currency setup
+  
+  <a class="hash-link-target" id="multi-currency-setup" pa-marked="1"></a>
+</h4>
+<p class="markdown-p">In order to display transactions in currencies other than the default currency for the country associated with your business account, you'll need to add them to your account as follows:</p>
+<ol class=""><li>Access the <a class="is-external-link" target="_blank" href="https://developer.paypal.com/developer/applications/" pa-marked="1">My Apps &amp; Credentials<!-- start exclude from search --><!-- end exclude from search --></a> page in your PayPal Developer Dashboard<ul class=""><li>Select your <strong>Live</strong> account</li>
+<li>View currently enabled currencies for your account</li>
+<li>Select currencies you would like to add and click the <strong>Add Currencies</strong> button</li>
+</ul>
+</li>
+<li>Access the <a class="is-external-link dx-external-link" target="_blank" href="https://www.paypal.com/businessprofile/mymoney" title="external link" rel="noopener noreferrer" pa-marked="1">My Money<!-- start exclude from search --><!-- end exclude from search --></a> page of your PayPal business account<ul class=""><li>Select <strong>PayPal balance &gt; Currencies</strong></li>
+<li>Select the currency you would like to add and click the <strong>Add Currency</strong> button</li>
+<li>Repeat for all currencies that you would like to add</li>
+<li>For more details, see the <a class="is-external-link dx-external-link" target="_blank" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/sell/mc/mc_receive-outside" title="external link" rel="noopener noreferrer" pa-marked="1">PayPal Help Center article on accepting multiple currencies<!-- start exclude from search --><!-- end exclude from search --></a></li>
+</ul>
+</li>
+</ol>
+<p class="markdown-p">Once a currency is enabled, you can begin passing it in the <code class="syntax-inline syntax-inline--theme">currency</code> field.</p>
+<div class="message message--note"><span class="message__title message__title--note">note</span><p class="markdown-p">Currencies can't be removed from your Developer Dashboard once they have been added. If you no longer wish to display a particular currency, you can choose not to pass it in the <code class="syntax-inline syntax-inline--theme">currency</code> field. You can close the currency in your business account, if you'd like.</p>
+</div>
+
+<h2 class="markdown-h2">
+  Send payment method nonce to server
+  
+  <a class="hash-link-target" id="send-payment-method-nonce-to-server" pa-marked="1"></a>
+</h2>
+<p class="markdown-p">Your client-side integration will send the customer's payment information to Braintree in exchange for a <a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/get-started#payment-method-nonce" pa-marked="1">payment method nonce</a>. On your server, you'll use this payment method nonce to securely create transactions.</p>
+
+      <h2 class="markdown-h2">
+  See also
+  
+  <a class="hash-link-target" id="see-also" pa-marked="1"></a>
+</h2>
+<ul class=""><li><a href="https://braintree.github.io/braintree-web/3.34.0//PayPalCheckout.html#createPayment" class="dx-external-link" title="external link" target="_blank" rel="noopener noreferrer" pa-marked="1">Additional tokenization options</a></li>
+<li><a href="http://braintree.github.io/braintree-web/3.34.0/#browser-support" class="dx-external-link" title="external link" target="_blank" rel="noopener noreferrer" pa-marked="1">Supported browsers and best practices</a></li>
+</ul>
+
+      <p class="markdown-p"><strong><a href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/server-side/ruby" pa-marked="1">Next Page: Set Up Your Server →</a></strong></p>
+
+          
+            
+    </article>
+
+
+
+
+    <div class="row">
+    <div class="column-12">
+      <div class="section section--support">
+        <span class="section__support-graphic"></span>
+        <h3 class="section__title dx-anchor" id="still-have-questions"><a class="dx-anchor__icon" href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/#still-have-questions" aria-hidden="true" pa-marked="1"></a><a class="heading-anchor" href="https://developer.paypal.com/docs/accept-payments/express-checkout/ec-braintree-sdk/client-side/javascript/v3/#still-have-questions" pa-marked="1"><span></span></a>Still Have Questions?</h3>
+          <p class="section__description">Browse our <a href="https://developer.paypal.com/support" pa-marked="1">support</a> options or <a class="dx-external-link" href="https://www.paypal-support.com/app/ask/" title="external link" target="_blank" rel="noopener noreferrer" pa-marked="1">submit a question to our technical support team.</a></p>
+      </div>
+    </div>
+</div>
+
+
+                        </article>
+                    </div>
+                
+            
+
+            <footer class="footer">
+              
+                
+              
+
+                <section class="section">
+                    <div class="section__content">
+                        <div class="grid">
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Developer</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://developer.paypal.com/docs/" rel="nofollow" pa-marked="1">Documentation</a></li>
+                                    <li><a href="https://developer.paypal.com/docs/api/" rel="nofollow" pa-marked="1">APIs</a></li>
+                                    <li><a href="https://medium.com/paypal-engineering" rel="nofollow" pa-marked="1">Engineering Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Support</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://developer.paypal.com/docs/faq/" rel="nofollow" pa-marked="1">FAQ</a></li>
+                                    <li><a href="https://www.paypal.com/selfhelp/help/home" rel="nofollow" pa-marked="1">Help Center</a></li>
+                                    <li><a href="https://www.paypal-support.com/" rel="nofollow" pa-marked="1">Technical Support</a></li>
+                                    <li><a href="https://www.paypal-community.com/t5/Merchant-Integration-Technical/ct-p/mts" rel="nofollow" pa-marked="1">Community</a></li>
+                                    <li><a href="https://developer.paypal.com/docs/contact-sales/" rel="nofollow" pa-marked="1">Contact Sales</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Resources</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://demo.paypal.com/" rel="nofollow" pa-marked="1">PayPal Demo</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/mpp/partner-program" rel="nofollow" pa-marked="1">Partners</a></li>
+                                    <li><a href="https://github.com/paypal/" rel="nofollow" pa-marked="1">GitHub</a></li>
+                                    <li><a href="https://www.paypal-status.com/product/production" rel="nofollow" pa-marked="1">API Status</a></li>
+                                    <li><a href="https://developer.paypal.com/docs/psd2-compliance/" rel="nofollow" pa-marked="1">PSD2 Compliance</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--3">
+                                <h3 class="footer__head">Family</h3>
+                                <ul class="footer__nav">
+                                    <li><a href="https://paypal.com/" rel="nofollow" pa-marked="1">PayPal</a></li>
+                                    <li><a href="https://braintreepayments.com/" rel="nofollow" pa-marked="1">Braintree</a></li>
+                                    <li><a href="https://venmo.com/" rel="nofollow" pa-marked="1">Venmo</a></li>
+                                    <li><a href="https://www.paydiant.com/" rel="nofollow" pa-marked="1">Paydiant</a></li>
+                                    <li><a href="https://xoom.com/" rel="nofollow" pa-marked="1">Xoom</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid__item grid__item--6">
+                                <ul class="footer__legal">
+                                    <li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=p/gen/ua/policy_privacy-outside" rel="nofollow" pa-marked="1">Privacy</a></li>
+                                    <li><a href="https://www.paypal.com/webapps/mpp/ua/legalhub-full" rel="nofollow" pa-marked="1">Legal</a></li>
+                                    <li><a href="https://www.paypal.com/us/webapps/helpcenter/helphub/home/" rel="nofollow" pa-marked="1">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid__item grid__item--6">
+                                <p class="footer__copyright">© 2019 PayPal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </main>
+        <div class="fbt">
+            <a class="fbt-link" href="https://developer.paypal.com/feedback/" target="_blank" pa-marked="1">Feedback</a>
+        </div>
+
+        <div class="dx-search-panel u-hide">
+  <button class="dx-search-panel-close" pa-marked="1">╳</button>
+  <div class="dx-search-panel-content">
+    <div class="dx-search-input-wrapper grid">
+      <input id="siteQ" class="dx-search-panel-input grid__item grid__item--10" type="text" name="q" value="" key="search_placeholder" placeholder="Search our developer docs..." autocomplete="off">
+      <button class="dx-btn-search grid__item grid__item--2" pa-marked="1"><img src="./Set Up Your Client - PayPal Developer_files/search-icon.svg"></button>
+      <button class="dx-btn-clear-x trigger-clear u-hide" pa-marked="1">╳</button>
+    </div>
+    <div class="dx-search-panel-default-view">
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">Popular Search Queries</div>
+          <ul>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-sandbox" data-search="sandbox" tabindex="0" pa-marked="1">sandbox</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-get-client-id-and-secret" data-search="get client id and secret" tabindex="0" pa-marked="1">client id and secret</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-ipn" data-search="IPN" tabindex="0" pa-marked="1">IPN (Instant Payment Notifications)</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-refund-payments" data-search="refund payments" tabindex="0" pa-marked="1">refund payments</a></li>
+            <li><a class="dx-search-panel-link" data-dxa="search,click,common-query-buttons" data-search="buttons" tabindex="0" pa-marked="1">buttons</a></li>
+          </ul>
+        </div>
+        <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Help</div>
+        <div class="dx-search-panel-support grid">
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal.com/us/smarthelp/search?q=Search.....&amp;channel=mts" target="_top" class="block block--outlined-search-panel block--link block--full-height" pa-marked="1">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="./Set Up Your Client - PayPal Developer_files/dev_portal_bulb.svg" alt="FAQ&#39;s">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="faq,faq-click,faq-referrer">FAQ's</p>
+                </div>
+                </div>
+            </a>
+          </div>
+          <div class="dx-search-panel-support-item grid__item grid__item--6">
+            <a href="https://www.paypal-community.com/mts" target="_blank" class="block block--outlined-search-panel block--link block--full-height" pa-marked="1">
+              <div class="grid">
+                <div class="grid__item grid__item--3">
+                  <img class="svg-icon-sm" src="./Set Up Your Client - PayPal Developer_files/dev_portal_forum.svg" alt="Forum">
+                </div>
+                <div class="grid__item grid__item--9 u-margin-auto">
+                  <p data-dxa="community,community-click,community-referrer">Tech Support Community</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dx-search-panel-section">
+        <div class="dx-search-panel-heading">PayPal Community</div>
+        <ul>
+          <li data-dxa="search-panel,click,community-link-test-credit-card"><a href="https://www.paypal-community.com/t5/REST-APIs/Test-Credit-Card-numbers-for-use-on-PayPal-sandbox/m-p/1124657" target="_blank" pa-marked="1">Test Credit Card numbers for use on PayPal sandbox</a></li>
+          <li data-dxa="search-panel,click,community-link-merchant-security-upgrade"><a href="https://www.paypal-community.com/t5/NVP-SOAP-APIs/Merchant-Security-Upgrade-Testing-PP-LIVE-8238/m-p/1459239" target="_blank" pa-marked="1">Merchant Security Upgrade Testing</a></li>
+          <li data-dxa="search-panel,click,community-link-inserting-company-logo"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/inserting-company-logo-in-payment-page/td-p/1512480" target="_blank" pa-marked="1">Inserting company logo in payment page</a></li>
+          <li data-dxa="search-panel,click,community-link-xo-as-guest-turned-on-but-not-available"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Checkout-as-Guest-Option-Turned-on-but-option-not-available-to/m-p/1215152" target="_blank" pa-marked="1">Checkout as Guest Option Turned on, but option not available to customers</a></li>
+          <li data-dxa="search-panel,click,community-link-create-spec-button-for-3-types"><a href="https://www.paypal-community.com/t5/PayPal-Payments-Standard/Create-specific-paypal-button-for-3-types-of-payment-options/m-p/1540082#M772" target="_blank" pa-marked="1">Create specific paypal button for 3 types of payment options</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dx-search-panel-custom-view u-hide">
+    <div class="dx-search-panel-content">
+      <div class="dx-search-panel-search-results">
+        <div class="dx-search-items"></div>
+        <button class="dx-btn dx-btn-load-more" pa-marked="1"> Load More</button>
+      </div>
+      <div class="dx-search-panel-search-no-results u-hide">
+        <p class="no-results"></p>
+      <button class="dx-btn dx-btn-clear trigger-clear" pa-marked="1"> Clear All</button>
+    </div>
+    </div>
+    </div>
+  </div>
+
+<div class="dx-search-panel-overlay u-hide"></div>
+
+        
+        
+
+        
+          
+        
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+<script src="./Set Up Your Client - PayPal Developer_files/pa.js.download"></script><script crossorigin="anonymous" src="./Set Up Your Client - PayPal Developer_files/miconfig.js.download"></script></body></html>

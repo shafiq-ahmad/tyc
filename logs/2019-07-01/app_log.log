@@ -1,0 +1,6 @@
+Error: time is 11:59:10 AM message: File not found: D:\wamp64\www\tyc\components\shipping\views\subscriptions\tmpl\edit.php
+
+DB Error: time is 12:07:23 PM message: Last SQL query: SELECT u.full_name AS owner_name, s.title AS sub_name, m.img_thumb, m.file, v.* FROM vehicles AS v LEFT JOIN users AS u ON (u.id = v.user_id) LEFT JOIN media AS m ON (m.id = v.image_id) LEFT JOIN user_subscriptions AS us ON (u.id = us.user_id) LEFT JOIN subscriptions AS s ON (us.subscription_id = s.id) WHERE v.visibility = 3<br/>Error#: 1146<br/>Desc: Table  ' Tycontra Mosapp.subscriptions '  Doesn ' T Exist<br/>
+
+DB Error: time is 12:12:01 PM message: Last SQL query: SELECT u.full_name AS owner_name, s.title AS sub_name, m.img_thumb, m.file, v.* FROM vehicles AS v LEFT JOIN users AS u ON (u.id = v.user_id) LEFT JOIN media AS m ON (m.id = v.image_id) LEFT JOIN user_subscriptions AS us ON (u.id = us.user_id) WHERE v.visibility = 3<br/>Error#: 1054<br/>Desc: Unknown Column  ' S.title '  In  ' Field List ' <br/>
+

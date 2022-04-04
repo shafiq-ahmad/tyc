@@ -1,0 +1,22 @@
+Error: time is 01:35:57 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Error: time is 01:39:13 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Error: time is 01:39:35 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Error: time is 01:55:14 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Error: time is 01:55:22 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Log: time is 02:22:37 AM message: 
+
+error: time is 02:22:37 AM message: {"error":{"message":"No Record inserted","code":610}}
+
+DB Error: time is 02:24:25 AM message: Last SQL query: INSERT INTO shipping_price_list (destination_port,origin_port,vehicle_type,shipping,service_charge,clearance,id) VALUES ('4','2','1','495','150','250','115');<br/>Error#: 1062<br/>Desc: Duplicate Entry  ' 115 '  For   ' PRIMARY ' <br/>
+
+DB Error: time is 02:42:16 AM message: Last SQL query: INSERT INTO ports (city_id,title,published) VALUES ('273','Umm Qasr','1');<br/>Error#: 1054<br/>Desc: Unknown Column  ' City Id '  In  ' Field List ' <br/>
+
+Error: time is 02:53:23 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+
+Error: time is 02:53:31 AM message: File not found: D:\wamp64\www\tyc\components\users\views\users\tmpl\edit.php
+

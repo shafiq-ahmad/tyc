@@ -1,0 +1,16 @@
+Error: time is 03:42:55 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+Error: time is 03:43:00 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+Error: time is 03:43:12 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+Error: time is 03:43:26 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+Error: time is 03:45:19 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+Error: time is 04:57:48 PM message: File not found: D:\wamp64\www\tyc\components\contactus\models\contacted_us.php
+
+DB Error: time is 05:09:39 PM message: Last SQL query: INSERT INTO contacted_us (full_name,e_mail,phone,city_id,subject,message,user_id) VALUES ('Shafique Ahmad','scmnst@yahoo.com','564642542','1','Test email by contact us setaaqwa.com','33432423','');<br/>Error#: 1366<br/>Desc: Incorrect Integer Value:  '  '  For Column  ' User Id '  At Row 1<br/>
+
+DB Error: time is 05:10:33 PM message: Last SQL query: INSERT INTO contacted_us (full_name,e_mail,phone,city_id,subject,message,user_id) VALUES ('Shafique Ahmad','scmnst@yahoo.com','564642542','1','Test email by contact us setaaqwa.com','33432423','');<br/>Error#: 1366<br/>Desc: Incorrect Integer Value:  '  '  For Column  ' User Id '  At Row 1<br/>
+

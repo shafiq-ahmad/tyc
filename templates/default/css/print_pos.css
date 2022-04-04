@@ -1,0 +1,81 @@
+
+/**
+Package: Point of sale
+version: 1.0.0
+URI: https://webapplics.com/apps/pos/1.0.0/docs
+Author: Shafique Ahmad
+Author URI: http://webapplics.com/
+Description: 
+copyright  Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+
+@media (min-width: 6in) and (max-width: 9in){
+	#main{}
+}
+fieldset{margin-top:10px;}
+fieldset.form-bill-total {padding:0;}
+input,select {border:none !important;box-shadow:none !important;}
+.cell {border:1px solid #000;padding:3px;}
+.th .cell {border:1px solid #000;float:left;padding:3px;}
+.row>div{float:left;font-size:9px;line-height:15px;margin-top:-1px;margin-left:-1px;overflow:hidden;}
+div.form {display:none;}
+.form-bill-total .row>div{float:right;width:60%;}
+.form-bill-total .row div:last-child label{border-bottom:0;}
+.form-bill-total .row>div label{/*border-bottom:1px solid black;*/float:left;line-height:18px;margin:0;padding:0;width:40%;}
+.form-bill-total .row>div div{/*border-bottom:1px solid black;*/float:left;line-height:18px;margin:0;padding:0 0 0 5px;width:60%;}
+.form-bill-total div.row:last-child{/*border-bottom:1px solid black;*/}
+.form-bill-total .row>div div input{height:18px;margin:0;padding:0;}
+.form-bill-total .well-sm{padding:0;margin-right:14px;}
+.frm_sale_art .well-sm{padding:0;}
+
+/*---------- header Area ----------*/
+#header {margin:0;padding;10px 0;}
+#logo {background-image:none !important;}
+#logo img{margin-top:10px;width:75%;}
+#company {font-size:20px;}
+#company .address{font-size:14px;padding-top:2px;}
+#company .doc-title{margin:10px 0;}
+#user {font-size:9px;margin:10px 25px 0 0;padding:2px 0;}
+#message {display:none;}
+
+
+/*---------- Invoice ----------*/
+#invArts {border-bottom:1px dashed #888;width:100%;}
+#invArts .invoice_info {}
+#invArts .invoice_info>div{width:50%;float:left;}
+#invArts .invoice_info label,#invArts .invoice_info input,#invArts .invoice_info select{display:inline-block;}
+#invArts .invoice_info input,#invArts .invoice_info select{width:70%; height:12px;padding:0;}
+#invArts .invoice_info label{width:30%;}
+#invArts .invoice_info .address{width:100%;}
+#invArticles input {text-align:center;}
+
+/*---------- Componant Area ----------*/
+#main {border:1px dashed #555;font-size:9px;margin-top:10px;width:3in;}
+#componant .com-head{margin:20px 0 10px 0;}
+.table-responsive{min-height:50px;overflow:visible;}
+.control-label{padding:0px}
+
+.input-sm{border:none;border-radius:0;font-size:9px;height:12px;padding:3px;}
+.col-sm-1{text-align:center;width:45px;}
+.col-sm-2{text-align:center;width:100px;}
+.col-sm-3{width:70px;}
+.col-sm-4{width:140px;}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{background-color:white;}
+/*---------- Forms ----------*/
+.form {font-size:9px;}
+.grid div label {font-weight:normal;line-height:12px;margin:0;text-align:right;}
+
+
+
+
+/*---------- Bill footer ----------*/
+#billing_notes{margin-top:10px;}
+#billing_contacts{margin-top:5px;}
+#footer{margin-top:10px;text-align:center;}
+#footer i{font-style:italic;text-decoration:underline;}
+
+
